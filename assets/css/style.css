@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: no;
+    scroll-behavior: smooth;
+}
+
+
+/* HEADER */
+
+.container-header {
+    height: 70px;
+}
+.container-header .header-content {
+    max-width: 1400px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.container-header .header-content .logo {
+    margin-right: 72px;
+}
+.header-content .logo img {
+    height: 30px;
+}
+.container-header .header-content .select-place {
+    padding: 10px 27px 10px 19px;
+    background-color: #ccc;
+    border-radius: 4px;
+}
+.container-header .header-content .nav {
+    padding-left: 42px;
+    width: 720px;
+}
+.header-content .nav li {
+    display: inline-block;
+    padding: 25px 12px 21px;
+    border-bottom: 3px solid red;
+}
+.nav li a {
+    text-decoration: none;
+    color: black;
+}
+.container-header .header-content .login {
+    padding: 0 10px;
+}
+.container-header .header-content .search {
+    padding: 0px 10px;
+    padding-top: 6px;
+}
+.header-content .search a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    padding: 0 10px;
+}
+.header-content .login button {
+    padding: 7px 12px;
+    font-size: 16px;
+    color: #ee4d2d;
+    border-radius: 4px;
+    border: 1px solid #ee4d2d;
+    cursor: pointer;
+
+}
+.body {
+    height: 1000px;
+    background-color: blueviolet;
+}
