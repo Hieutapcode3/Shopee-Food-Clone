@@ -1,0 +1,8 @@
+@media screen and (max-width:1700px) {
+    .container-header .header-content .logo {
+        position: static;
+    }
+    .container-header .header-content .nav {
+        width: 657px;
+    }
+}
