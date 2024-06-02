@@ -79,7 +79,7 @@
             </header>
             <div class="content">
                 <div class="wall-banner">
-                    <div class="container-content">
+                    <div class="container-content">                     
                         <div class="side-search">
                             <div>
                                 <h1>Đặt Đồ ăn,giao hàng từ 20'...</h1>
@@ -116,6 +116,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="container-scroll-home">
+                    <div class="container">
                         <div class="container-items-food">
                             <div class="get-place">
                                 <p>Đồ ăn <i class="ti-arrow-right"></i></p>
@@ -559,6 +563,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="des-coporation" >
                     <div class="item-des-cor">
@@ -736,5 +741,29 @@
         document.addEventListener('click', handleClickOutside);
     </script>
     <!-- Scroll -->
+    <script>
+        const wallBanner = document.querySelector('.wall-banner');
+        const container = document.querySelector('.container-scroll-home');
+
+        const initialTop = 70; // Vị trí top ban đầu của wall-banner
+        const fixedTop = 1545; // Vị trí top khi chuyển thành absolute
+        const containerMarginBottom = 68; // Giá trị margin-bottom của container
+
+        window.addEventListener('scroll', () => {
+            const containerRect = container.getBoundingClientRect();
+            const containerBottom = containerRect.bottom - containerMarginBottom;
+            const windowHeight = window.innerHeight;
+
+            if (containerBottom <= windowHeight) {
+                // Khi cuộn hết chiều cao của container (bao gồm cả margin-bottom)
+                wallBanner.style.position = 'absolute';
+                wallBanner.style.top = fixedTop + 'px';
+            } else if (containerRect.bottom + containerMarginBottom > windowHeight) {
+                console.log("jump")
+                wallBanner.style.position = 'fixed';
+                wallBanner.style.top = initialTop + 'px';
+            }
+        });
+    </script>
 </body>
 </html>

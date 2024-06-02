@@ -19,6 +19,11 @@ body {
 .drop-down .dropdown-menu.show{
     display: block;
 }
+.container {
+    width: 1200px;
+    margin: auto;
+    height: 100%;
+}
 .clear {
     clear: both;
 }
@@ -159,11 +164,11 @@ body {
     background-image: url(../img/main-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* position: fixed; */
+    position: fixed;
     top: 70px;
     width: 100%;
     margin-bottom: 75px;
-    overflow: scroll;
+    overflow: hidden;
 
 }
 .content .wall-banner .container-content {
@@ -271,13 +276,21 @@ body {
     border-radius: 12px;
     transform-origin: left;
 }
-.container-content .container-items-food {
+.container-scroll-home::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.container-scroll-home .container-items-food {
     float: right;
     width: 670px;
     margin-top: 48px;
-    margin-bottom: 36px;
+    position: relative;
+    z-index: auto;
+    margin-bottom: 75px;
+    min-height: calc(100vh - 123px);
 }
-.container-content .container-items-food .get-place {
+.container-scroll-home .container-items-food .get-place {
     padding: 14px 17px 14px 40px;
     background-color: #fff;
     display: flex;
