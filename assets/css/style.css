@@ -152,6 +152,7 @@ body {
 }
 /* BODY */
 .content {
+    padding-top: 70px;
 }
 .content .wall-banner {
     height: 100vh;
@@ -162,15 +163,16 @@ body {
     top: 70px;
     width: 100%;
     margin-bottom: 75px;
+    overflow: scroll;
+
 }
 .content .wall-banner .container-content {
     width: 1200px;
     position: relative;
     height: 100%;
     margin: auto;
-    overflow: scroll;
 }
-.wall-banner .container-content::-webkit-scrollbar {
+.wall-banner::-webkit-scrollbar {
     display: none; 
 }
 .wall-banner .container-content .side-search {
@@ -179,7 +181,7 @@ body {
     flex-direction: column;
     width: 470px;
     position: absolute;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
     margin-top: -30px;
     margin-left: 20px;
@@ -272,7 +274,7 @@ body {
 .container-content .container-items-food {
     float: right;
     width: 670px;
-    margin-top: 118px;
+    margin-top: 48px;
     margin-bottom: 36px;
 }
 .container-content .container-items-food .get-place {
