@@ -2,7 +2,6 @@
     margin: 0;
 }
 html {
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-family: "Noto Sans", Arial, sans-serif;
     scroll-behavior: smooth;
 }
@@ -381,7 +380,7 @@ body {
 .items-restaurent .item-food img {
     height: 100%;
     width: 100%;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px;
 }
 .items-restaurent .item-food .tag-like {
     position: absolute;
@@ -433,6 +432,98 @@ body {
     z-index: 2;
     cursor: pointer;
     border: 1px solid #fff;
+}
+.area-items.collection .items-restaurent .infor-item {
+    border: none;
+}
+.items-restaurent .infor-item p{
+    font-size: 12px;
+    color: #0288d1;
+}
+.area-items.diverse .title-area {
+    margin-top: 10px;
+    font-size: 16px;
+}
+.area-items.diverse .title-area  ul {
+    padding: 0;
+    flex-grow: 1;
+    line-height: 30px;
+}
+.area-items.diverse .title-area li {
+    display: inline-block;
+    color: #000;
+    margin-right: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.area-items.diverse .title-area li:hover {
+    color: #0288d1;
+}
+.area-items.diverse .title-area li:last-child  {
+    margin: 0;
+}
+.area-items.diverse .title-area  .select-district {
+    padding-left: 10px;
+}
+.title-area  .select-district select {
+    padding: 6px 0 6px 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.area-items.diverse .items-restaurent {
+    display: flex;
+    flex-direction: column;
+}
+.area-items.diverse .items-restaurent .item-food {
+    width: 100%;
+
+}
+.area-items.diverse .items-restaurent .item-food a{
+    display: flex;
+}
+.area-items.diverse .item-food .img-food {
+    height: 90px;
+    width: 35%;
+}
+.area-items.diverse .img-food img {
+    border: 5px;
+}
+.area-items.diverse .item-food .infor-item {
+    display: flex;
+    border: none;
+    padding: 0 0 0 15px;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+.area-items.diverse .infor-item img {
+    width: 17px;
+    height: 17px;
+    padding-right: 2px;
+}
+.area-items.diverse .infor-item .title {
+    width: 100%;
+    font-weight: bold;
+}
+.area-items.diverse .infor-item .title span {
+    padding-right: 2px;
+}
+.area-items.diverse .infor-item .place {
+    width: 100%;
+    font-size: 13px;
+    color: #0288d1;
+    margin-bottom: 4px;
+}
+.area-items.diverse .infor-item .price {
+    width: 100%;
+    font-size: 14px;
+}
+.area-items.diverse .infor-item .item-promotion {
+    width: 100%;
+    border: none;
+    padding-top: 4px;
+    font-size: 13px;
 }
 .content .des-coporation {
     width: 1200px;
@@ -549,6 +640,7 @@ body {
 .body-footer .sub-nav-item:last-child:after {
     content: "";
 }
+/* FOOTER */
 .container-footer {
     width: 1200px;
     padding-top: 32px;
@@ -639,4 +731,113 @@ body {
 }
 .container-footer .addr-company img {
     width: 100%;
+}
+/* modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    display: none;
+}
+.modal.open {
+    display: block;
+}
+.modal-container {
+    width: 883px;
+    background-color: #fff;
+    margin: 5% auto 0;
+    border-radius: 6px 6px;
+    position: relative;
+    animation: modalFadeIn linear 0.3s;
+}
+.modal-container >i {
+    position:absolute;
+    top: -24px;
+    right: 0;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+.modal-container.modal-fadeOut {
+    animation: modalFadeOut ease-out 0.3s;
+}
+.modal-header {
+    padding: 11px 15px 10px 18px;
+    background-color: #ebebeb;
+    border-radius: 6px 6px 0 0;
+}
+.modal-header h3 {
+    font-size: 16px;
+    color: #464646;
+}
+.modal-body .search-local {
+    padding: 16px 20px 0;
+}
+.primary-place {
+    position: relative;
+}
+.primary-place i {
+    position: absolute;
+    font-size: 20px;
+    padding: 10px;
+    opacity: 0.6;
+}
+.primary-place i:last-of-type {
+    right: 0;
+    cursor: pointer;
+}
+.primary-place input {
+    width: 100%;
+    padding: 10px 40px 10px 40px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    line-height: 18px;
+    outline: none;
+    font-size: 18px;
+}
+.find-map {
+    padding: 18px 31px 18px 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.find-map i {
+    padding: 4px;
+    opacity: 0.6;
+}
+.find-map i:last-child {
+    font-size: 10px;
+}
+.find-map p {
+    padding-left: 12px;
+    color: #0288d1;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+@keyframes modalFadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes modalFadeOut {
+    from{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
 }
