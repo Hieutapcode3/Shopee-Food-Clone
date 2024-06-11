@@ -5,12 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/restaurant.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/Logo-ShopeefoodVN.png">
+    <link rel="stylesheet" href="./assets/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=vietnamese">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 <body class="body-food">
     <div class="wrapper">
-        <header></header>
+        <header class="main-header">
+            <div class="container-header">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href=""><img src="./assets/img/shopeefoodvn.png" alt=""></a>
+                    </div>
+                    <div class="drop-down">
+                        <p class="select-place">Hà Nội<i class="ti-angle-down"></i></p>
+                        <div class="dropdown-menu">
+                            <div class="place-items">
+                                <p>Tp.hcm</p>
+                                <p>92046 địa điểm</p>
+                            </div>
+                            <div class="place-items">
+                                <p>Tp.hcm</p>
+                                <p>92046 địa điểm</p>
+                            </div>
+                            <div class="place-items">
+                                <p>Tp.hcm</p>
+                                <p>92046 địa điểm</p>
+                            </div>
+                            <div class="place-items">
+                                <p>Tp.hcm</p>
+                                <p>92046 địa điểm</p>
+                            </div>
+                            <div class="place-items">
+                                <p>Tp.hcm</p>
+                                <p>92046 địa điểm</p>
+                            </div>
+                            <div class="place-items">
+                                <p>Tp.hcm</p>
+                                <p>92046 địa điểm</p>
+                            </div>
+                            <div class="place-items">
+                                <p>Tp.hcm</p>
+                                <p>92046 địa điểm</p>
+                            </div>
+                            <div class="place-items">
+                                <p>Tp.hcm</p>
+                                <p>92046 địa điểm</p>
+                            </div>
+                            <div class="place-items">
+                                <p>Tp.hcm</p>
+                                <p>92046 địa điểm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav">
+                        <li class="li"><a href="#">Đồ ăn</a></li>
+                        <li class="li"><a href="#">Thực phẩm</a></li>
+                        <li class="li"><a href="#">Rượu bia</a></li>
+                        <li class="li"><a href="#">Hoa</a></li>
+                        <li class="li"><a href="#">Siêu thị</a></li>
+                        <li class="li"><a href="#">Thú cưng</a></li>
+                    </ul>
+                    <div class="search">
+                        <a href=""><i class="ti-search"></i></a>
+                    </div>
+                    <div class="login">
+                        <button type="button">Đăng nhập</button>
+                    </div>
+                </div>
+            </div>
+        </header>
         <div class="details-restaurant">
             <div class="container">
                 <div class="details-restaurant-img">
@@ -95,10 +161,411 @@
                 </div>
                 <div class="clear"></div>
             </div>
-
         </div>        
 
+        <div class="container relative clearfix">
+            <div class="now-menu-restaurant">
+                <div class="now-restaurant-tab">
+                    <div class="item active">Thực đơn</div>
+                </div>
+                <div class="menu-restaurant-content-tab">
+                    <div class="menu-restaurant-container">
+                        <div class="menu-restaurant-category">
+                            <div class="list-category" id="scroll-spy">
+                                <div class="scrollbar-container ps">
+                                    <div id="chedau" class="item active">
+                                        <span  title="Chè đậu các loại" class="item-link">Chè đậu các loại</span>
+                                    </div>
+                                    <div id="che" class="item">
+                                        <span title="Chè" class="item-link">Chè</span>
+                                    </div>
+                                    <div id="tsav" class="item">
+                                        <span  title="Trà sữa - Ăn Vặt" class="item-link">Trà sữa - Ăn Vặt</span>
+                                    </div>
+                                    <div id="combo" class="item">
+                                        <span title="COMBO PHẢI THỬ" class="item-link">COMBO PHẢI THỬ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-restaurant-detail">
+                            <div class="promotion-orders">
+                                <div class="promotion-item">
+                                    <img src="https://mms.img.susercontent.com/vn-11134513-7r98o-ltm6j1v3kah653" alt="" class="icon-promotion">
+                                    <div class="content">
+                                        Giảm giá một số món ăn trên menu
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="menu-restaurant-list">
+                                <div class="search-item">
+                                    <p class="input-group">
+                                        <i class="fas fa-search"></i>
+                                        <input type="search" name="searchKey" placeholder="Tìm món" value="">
+                                      </p>
+                                </div>
+                                <div id="restaurant-item">
+                                    <div>
+                                        <div id="chedau1" class="menu-group">
+                                            Chè đậu các loại 
+                                        </div>
+                                        <div class="item-restaurant-row">
+                                            <div class="row">
+                                                <div class="item-restaurant-img">
+                                                    <button class="inline">
+                                                        <img src="https://down-bs-vn.img.susercontent.com/vn-11134517-7r98o-lqxw26lokhc45e" alt="Chè đậu đỏ cốt dừa" width="60" height="60">
+                                                    </button>
+                                                </div>
+                                                <div class=" item-restaurant-info">
+                                                    <h2 class="item-restaurant-name">Chè đậu đỏ cốt dừa</h2>
+                                                </div>
+                                                <div class="item-restaurant-more">
+                                                    <div class="row">
+                                                        <div class=" product-price">
+                                                            <div class="old-price">30.000<span class="d">đ</span></div>
+                                                            <div class="current-price">15.000<span class="d">đ</span></div>
+                                                        </div>
+                                                        <div class="adding-food-cart txt-right">
+                                                            <div class="btn-adding">+</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-restaurant-row">
+                                            <div class="row">
+                                                <div class="item-restaurant-img">
+                                                    <button class="inline">
+                                                        <img src="https://down-bs-vn.img.susercontent.com/vn-11134517-7r98o-lqxw26lokhc45e" alt="Chè đậu đỏ cốt dừa" width="60" height="60">
+                                                    </button>
+                                                </div>
+                                                <div class=" item-restaurant-info">
+                                                    <h2 class="item-restaurant-name">Chè đậu đỏ cốt dừa</h2>
+                                                </div>
+                                                <div class="item-restaurant-more">
+                                                    <div class="row">
+                                                        <div class=" product-price">
+                                                            <div class="current-price">15.000<span class="d">đ</span></div>
+                                                        </div>
+                                                        <div class="adding-food-cart txt-right">
+                                                            <div class="btn-adding">+</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-restaurant-row">
+                                            <div class="row">
+                                                <div class="item-restaurant-img">
+                                                    <button class="inline">
+                                                        <img src="https://down-bs-vn.img.susercontent.com/vn-11134517-7r98o-lqxw26lokhc45e" alt="Chè đậu đỏ cốt dừa" width="60" height="60">
+                                                    </button>
+                                                </div>
+                                                <div class=" item-restaurant-info">
+                                                    <h2 class="item-restaurant-name">Chè đậu đỏ cốt dừa</h2>
+                                                </div>
+                                                <div class="item-restaurant-more">
+                                                    <div class="row">
+                                                        <div class=" product-price">
+                                                            <div class="current-price">15.000<span class="d">đ</span></div>
+                                                        </div>
+                                                        <div class="adding-food-cart txt-right">
+                                                            <div class="btn-adding">+</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div id="che1" class="menu-group">
+                                        Chè
+                                    </div>
+                                    <div class="item-restaurant-row">
+                                        <div class="row">
+                                            <div class="item-restaurant-img">
+                                                <button class="inline">
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134517-7r98o-lqxw26lokhc45e" alt="Chè đậu đỏ cốt dừa" width="60" height="60">
+                                                </button>
+                                            </div>
+                                            <div class=" item-restaurant-info">
+                                                <h2 class="item-restaurant-name">Chè đậu đỏ cốt dừa</h2>
+                                            </div>
+                                            <div class="item-restaurant-more">
+                                                <div class="row">
+                                                    <div class=" product-price">
+                                                        <div class="current-price">15.000<span class="d">đ</span></div>
+                                                    </div>
+                                                    <div class="adding-food-cart txt-right">
+                                                        <div class="btn-adding">+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-restaurant-row">
+                                        <div class="row">
+                                            <div class="item-restaurant-img">
+                                                <button class="inline">
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134517-7r98o-lqxw26lokhc45e" alt="Chè đậu đỏ cốt dừa" width="60" height="60">
+                                                </button>
+                                            </div>
+                                            <div class=" item-restaurant-info">
+                                                <h2 class="item-restaurant-name">Chè đậu đỏ cốt dừa</h2>
+                                                <div class="item-restaurant-desc">Vị bùi béo của đậu xanh hoà quyện với vị thanh mát của thạch</div>
+                                            </div>
+                                            <div class="item-restaurant-more">
+                                                <div class="row">
+                                                    <div class=" product-price">
+                                                        <div class="current-price">15.000<span class="d">đ</span></div>
+                                                    </div>
+                                                    <div class="adding-food-cart txt-right">
+                                                        <div class="btn-adding">+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-restaurant-row">
+                                        <div class="row">
+                                            <div class="item-restaurant-img">
+                                                <button class="inline">
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134517-7r98o-lqxw26lokhc45e" alt="Chè đậu đỏ cốt dừa" width="60" height="60">
+                                                </button>
+                                            </div>
+                                            <div class=" item-restaurant-info">
+                                                <h2 class="item-restaurant-name">Chè đậu đỏ cốt dừa</h2>
+                                            </div>
+                                            <div class="item-restaurant-more">
+                                                <div class="row">
+                                                    <div class=" product-price">
+                                                        <div class="current-price">15.000<span class="d">đ</span></div>
+                                                    </div>
+                                                    <div class="adding-food-cart txt-right">
+                                                        <div class="btn-adding">+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="tsav1" class="menu-group">
+                                        Trà sữa ăn vặt
+                                    </div>
+                                    <div class="item-restaurant-row">
+                                        <div class="row">
+                                            <div class="item-restaurant-img">
+                                                <button class="inline">
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134517-7r98o-lqxw26lokhc45e" alt="Chè đậu đỏ cốt dừa" width="60" height="60">
+                                                </button>
+                                            </div>
+                                            <div class=" item-restaurant-info">
+                                                <h2 class="item-restaurant-name">Chè đậu đỏ cốt dừa</h2>
+                                            </div>
+                                            <div class="item-restaurant-more">
+                                                <div class="row">
+                                                    <div class=" product-price">
+                                                        <div class="current-price">15.000<span class="d">đ</span></div>
+                                                    </div>
+                                                    <div class="adding-food-cart txt-right">
+                                                        <div class="btn-adding">+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-restaurant-row">
+                                        <div class="row">
+                                            <div class="item-restaurant-img">
+                                                <button class="inline">
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134517-7r98o-lqxw26lokhc45e" alt="Chè đậu đỏ cốt dừa" width="60" height="60">
+                                                </button>
+                                            </div>
+                                            <div class=" item-restaurant-info">
+                                                <h2 class="item-restaurant-name">Chè đậu đỏ cốt dừa</h2>
+                                                <div class="item-restaurant-desc">Vị bùi béo của đậu xanh hoà quyện với vị thanh mát của thạch</div>
+                                            </div>
+                                            <div class="item-restaurant-more">
+                                                <div class="row">
+                                                    <div class=" product-price">
+                                                        <div class="current-price">15.000<span class="d">đ</span></div>
+                                                    </div>
+                                                    <div class="adding-food-cart txt-right">
+                                                        <div class="btn-adding">+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-restaurant-row">
+                                        <div class="row">
+                                            <div class="item-restaurant-img">
+                                                <button class="inline">
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134517-7r98o-lqxw26lokhc45e" alt="Chè đậu đỏ cốt dừa" width="60" height="60">
+                                                </button>
+                                            </div>
+                                            <div class=" item-restaurant-info">
+                                                <h2 class="item-restaurant-name">Chè đậu đỏ cốt dừa</h2>
+                                            </div>
+                                            <div class="item-restaurant-more">
+                                                <div class="row">
+                                                    <div class=" product-price">
+                                                        <div class="current-price">15.000<span class="d">đ</span></div>
+                                                    </div>
+                                                    <div class="adding-food-cart txt-right">
+                                                        <div class="btn-adding">+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="combo1" class="menu-group">
+                                        Combo phải thử
+                                    </div>
+                                    <div class="item-restaurant-row">
+                                        <div class="row">
+                                            <div class="item-restaurant-img">
+                                                <button class="inline">
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134517-7r98o-lqxw26lokhc45e" alt="Chè đậu đỏ cốt dừa" width="60" height="60">
+                                                </button>
+                                            </div>
+                                            <div class=" item-restaurant-info">
+                                                <h2 class="item-restaurant-name">Chè đậu đỏ cốt dừa</h2>
+                                            </div>
+                                            <div class="item-restaurant-more">
+                                                <div class="row">
+                                                    <div class=" product-price">
+                                                        <div class="current-price">15.000<span class="d">đ</span></div>
+                                                    </div>
+                                                    <div class="adding-food-cart txt-right">
+                                                        <div class="btn-adding">+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-restaurant-row">
+                                        <div class="row">
+                                            <div class="item-restaurant-img">
+                                                <button class="inline">
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134517-7r98o-lqxw26lokhc45e" alt="Chè đậu đỏ cốt dừa" width="60" height="60">
+                                                </button>
+                                            </div>
+                                            <div class=" item-restaurant-info">
+                                                <h2 class="item-restaurant-name">Chè đậu đỏ cốt dừa</h2>
+                                                <div class="item-restaurant-desc">Vị bùi béo của đậu xanh hoà quyện với vị thanh mát của thạch</div>
+                                            </div>
+                                            <div class="item-restaurant-more">
+                                                <div class="row">
+                                                    <div class=" product-price">
+                                                        <div class="current-price">15.000<span class="d">đ</span></div>
+                                                    </div>
+                                                    <div class="adding-food-cart txt-right">
+                                                        <div class="btn-adding">+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-restaurant-row">
+                                        <div class="row">
+                                            <div class="item-restaurant-img">
+                                                <button class="inline">
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134517-7r98o-lqxw26lokhc45e" alt="Chè đậu đỏ cốt dừa" width="60" height="60">
+                                                </button>
+                                            </div>
+                                            <div class=" item-restaurant-info">
+                                                <h2 class="item-restaurant-name">Chè đậu đỏ cốt dừa</h2>
+                                            </div>
+                                            <div class="item-restaurant-more">
+                                                <div class="row">
+                                                    <div class=" product-price">
+                                                        <div class="current-price">15.000<span class="d">đ</span></div>
+                                                    </div>
+                                                    <div class="adding-food-cart txt-right">
+                                                        <div class="btn-adding">+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="qr-code" id="QRCode">
+                    <canvas height="300" width="300" style="height: 200px;width:200px;"></canvas>
+                    <div>
+                        Quét mã để đặt món
+                        <br>
+                         trên app Shopee
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/mainpage.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="container-footer">
+        <div class="company">
+            <h4>Công ty</h4>
+            <ul>
+                <li><a href="#" target="blank">Giới thiệu</a></li>
+                <li><a href="#" target="_blank">Trung tâm Trợ giúp</a></li>
+                <li><a href="#" target="_blank">Quy chế</a></li>
+                <li><a href="#" target="_blank">Điều khoản sử dụng</a></li>
+                <li><a href="#" target="_blank">Bảo mật thông tin</a></li>
+                <li><a href="#" target="_blank">Giải quyết khiếu nại</a></li>
+                <li><a href="#" target="_blank">Liên hệ</a></li>
+                <li><a href="#" target="_blank">Hợp tác nhân viên giao nhận</a></li>
+                <li><a href="#" target="_blank">Đăng ký quán</a></li>
+                <li><a href="#" target="_blank">ShopeeFood Uni</a></li>
+                <li><a href="#" target="_blank">Shopee Blog</a></li>
+            </ul>
+        </div>
+        <div class="apps-dowload">
+            <h4>Ứng dụng ShopeeFood</h4>
+            <span>
+                <a href="https://itunes.apple.com/us/app/deliverynow/id1137866760" target="_blank"><img src="./assets/img/AppStore-vn.png" alt=""></a>
+                <a href="https://play.google.com/store/apps/details?id=com.deliverynow" target="_blank"><img src="./assets/img/PlayStore-vn.png" alt=""></a>
+                <a href="https://appgallery.huawei.com/#/app/C102401853" target="_blank"><img src="./assets/img/Huawei-gallery-vn.png" alt=""></a>
+            </span>
+            
+        </div>
+        <div class="social-media">
+            <img src="./assets/img/Logo-ShopeefoodVN.png" alt="">
+            <p>© 2024 ShopeeFood</p>
+            <span>
+                <a href="https://www.facebook.com/shopeefoodvn" target="_blank"><p><i class="ti-facebook"></i></p></a>
+                <a href="https://www.instagram.com/shopeefood_vn/" target="_blank"><p><i class="ti-instagram"></i></p></a>
+            </span>
+        </div>
+        <div class="addr-company">
+            <h4>Địa chỉ công ty</h4>
+            <span>
+                <p>Công Ty Cổ Phần Foody</p>
+                <p>Lầu G, Tòa nhà Jabes 1,</p>
+                <p>số 244 đường Cống Quỳnh, phường Phạm Ngũ Lão, Quận 1, TPHCM</p>
+                <p>Giấy CN ĐKDN số: 0311828036</p>
+                <p>do Sở Kế hoạch và Đầu tư TP.HCM cấp ngày 11/6/2012,</p>
+                <p>sửa đổi lần thứ 23, ngày 10/12/2020</p>
+                <p>Chịu trách nhiệm quản lý nội dung: Nguyễn Hồ Quảng Giang</p>
+                <p>Điện thoại liên hệ: 028 71096879</p>
+                <p>Email: <a href="#" target="_blank"> support@shopeefood.vn</a></p>
+                <a href="http://online.gov.vn/Home/WebDetails/22739" target="_blank"><img src="./assets/img/gov_seals1.jpg" alt=""></a>
+            </span>
+        </div>
     </div>
     
-</body>
+</footer>
 </html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            
+        }
+        .container {
+            max-width: 400px;
+            width: 100%;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        img {
+            border-style: none;
+        }
+        .logo {
+            width: 110px;
+            height: 85px;
+            margin-bottom: 15px;
+        }
+        .input-container {
+            margin-bottom: 14px;
+        }
+        .input {
+            width: 100%;
+            height: 48px;
+            padding: 0 23px;
+            border: none;
+            border-bottom: 1px solid #dbdbdb;
+            margin-bottom: 14px;
+            box-sizing: border-box;
+            font-size: 16px ;
+        }
+        button {
+            background-color: #f13233;
+            height: 45px;
+            border: 0;
+            border-radius: 2px;
+            width: 100%;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 15px;
+        }
+        button:disabled {
+            background-color: #f5a6a6;
+            cursor: not-allowed;
+        }
+        .blue {
+            color: #007afc;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="content">
+                <img src="./assets/img/Logo-ShopeefoodVN.png" alt="now" class="logo">
+                <div class="input-container">
+                    <input type="tel" id="phone-number" placeholder="Vui lòng nhập số điện thoại" class="input">
+                </div>
+                <button class="btn" id="continue-btn" disabled>Tiếp tục</button>
+                <div class="dksd">
+                    <div>
+                        Khi chọn <strong>Tiếp tục</strong>, bạn đồng ý với <span class="blue">Điều khoản sử dụng</span>
+                        và <span class="blue">Chính sách bảo mật</span> của <strong>ShoppeFood</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const phoneNumberInput = document.getElementById('phone-number');
+        const continueButton = document.getElementById('continue-btn');
+
+        phoneNumberInput.addEventListener('input', function() {
+            if (phoneNumberInput.value.trim() !== '') {
+                continueButton.disabled = false;
+            } else {
+                continueButton.disabled = true;
+            }
+        });
+    </script>
+</body>
+</html>
