@@ -29,7 +29,7 @@ body{
     clear: both;
 }
 
-
+/* ------------------------------------------------- */
 
 .container-header {
     height: 70px;
@@ -164,13 +164,12 @@ body{
     background-color: #fff;
     box-sizing: border-box;
     
+    
 }
 
-.details-restaurant .container{
+.container{
     max-width: 1200px;
     margin: auto;
-    background-color: #fff;
-    
 }
 
 .details-restaurant .details-restaurant-img {
@@ -708,16 +707,22 @@ body{
     background-color: #a6171b;
 }
 
+
+
 .qr-code{
     position: absolute;
     top: 48px;
     right: 10px;
     width: 315px;
-    background-image: url(/Shopee-Food-Clone/assets/img/qrcode.png);
+    background-image: url(/assets/img/qrcode.png);
     color: #fff;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 10px
+}
+
+.qr-code canvas{
+    background-image: url(/assets/img/qrcode-shoppefood.png);
 }
 
 .clearfix::after{

@@ -321,6 +321,7 @@ body{
     border-radius: 6px;
     margin-bottom: 20px;
     position: relative;
+    
 }
 
 .list-restaurant{
@@ -334,12 +335,39 @@ body{
     background-color: #fff;
     position: relative;
     display: block;
+    text-decoration: none;
 }
 
 .list-restaurant .item-restaurant{
     width: 20%;
     padding: 10px;
     float: left;
+    position: relative;
+}
+
+.item-restaurant > a:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2), 0 4px 15px 0 rgba(0, 0, 0, .19);
+}
+
+.list-restaurant .item-content .img-restaurant{
+    position: relative;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+    height: 137px;
+    background-color: #eaeaea;
+}
+
+.list-restaurant .item-content .img-restaurant .tag-preferred {
+    text-transform: none;
+    position: absolute;
+    background-color: #f13233;
+    color: #fff;
+    bottom: 5px;
+    left: 7px;
+    padding: 3px 5px;
+    z-index: 1;
+
 }
 
 .list-restaurant .item-content .img-restaurant .tag-preferred i{
@@ -347,21 +375,117 @@ body{
     padding-right: 5px;
 }
 
+
+.fa{
+    display: inline-block;
+}
+
+.fa-thumbs-up::before{
+    content: "";
+}
+
 .list-restaurant .item-restaurant img{
     width: 100%;
     height: 100%;
-    /* position: absolute; */
-    /* top: 50%;
+    /* position: absolute; 
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%); */
+    transform: translate(-50%,-50%);
+    vertical-align: middle;
+    border-style: none; */
 }
+
+.list-restaurant .info-restaurant{
+    border: 1px solid #d7d7d7;
+    border-radius: 0 0 6px 6px;
+    height: 94px;
+}
+
+.list-restaurant .info-restaurant .info-basic{
+    border-bottom: 1px solid #ebebeb;
+    padding: 10px;
+}
+
+.info-basic .name-res{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    color: black;
+}
+
+.list-restaurant .info-restaurant .info-basic .icon-quality-merchant{
+    background-image: url(/assets/img/partner2x.png);
+    width: 17px;
+    height: 17px;
+    margin-right: 0px;
+    background-size: cover;
+    vertical-align: bottom;
+}
+
+.info-basic .icon{
+    display: inline-block;
+    line-height: 1;
+
+}
+
+.info-basic .adress-res{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #6d6f71;
+    font-size: 13px;
+}
+
+
+.info-restaurant .discount{
+    color: #187caa;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px 8px 5px;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+.discount .fas{
+    padding-right: 5px;
+}
+
+.discount .fa-tag{
+    color: #cf2127;
+}
+
+.discount .fa-tag::before{
+    content: "\f02b";
+}
+
+.item-restaurant .opentime-status {
+    width: 17px;
+    height: 17px;
+    background-color: rgb(35, 152, 57);
+    border-radius: 50%;
+    position:absolute;
+    top: -6px;
+    left: -5px;
+    z-index: 2;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+
+
 
 .clearfix::after{
     display: block;
     clear: both;
     content: "";
-
 }
+
+
+
 *,::after,::before{
     box-sizing: border-box;
    
