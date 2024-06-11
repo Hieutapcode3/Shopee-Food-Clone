@@ -352,37 +352,37 @@ body {
 .area-items .title-area a i{
     font-size: 8px;
 }
-.list-items-food .area-items .items-restaurent {
+.list-items-food .area-items .items-restaurant {
     display: flex;
     margin: 0 -8px;
     flex-wrap: wrap;
 }
-.area-items .items-restaurent .item-food  {
+.area-items .items-restaurant .item-food  {
     width: calc(100%/3 - 16px);
     padding: 8px;
     position: relative;
 }
-.items-restaurent .item-food a{
+.items-restaurant .item-food a{
     text-decoration: none;
     color: black;
     border-radius: 6px;
     display: block;
 }
-.items-restaurent .item-food > a:hover {
+.items-restaurant .item-food > a:hover {
     transition: box-shadow .25s;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2), 0 4px 15px 0 rgba(0, 0, 0, .19);
 }
-.items-restaurent .item-food .img-food {
+.items-restaurant .item-food .img-food {
     position: relative;
     height: 116px;
     border-radius: 6px 6px 0 0;
 }
-.items-restaurent .item-food img {
+.items-restaurant .item-food img {
     height: 100%;
     width: 100%;
     border-radius: 5px;
 }
-.items-restaurent .item-food .tag-like {
+.items-restaurant .item-food .tag-like {
     position: absolute;
     font-size: 14px;
     color: #fff;
@@ -391,7 +391,7 @@ body {
     bottom: 4px;
     left: 6px;
 }
-.items-restaurent .item-food .infor-item {
+.items-restaurant .item-food .infor-item {
     border: 1px solid #d7d7d7;
     border-radius: 0 0 5px 5px;
     padding: 6px 8px;
@@ -421,7 +421,7 @@ body {
     font-size: 15px;
     color: #cf2127;
 }
-.items-restaurent .item-food .opentime-status {
+.items-restaurant .item-food .opentime-status {
     width: 15px;
     height: 15px;
     background-color: rgb(35, 152, 57);
@@ -433,10 +433,10 @@ body {
     cursor: pointer;
     border: 1px solid #fff;
 }
-.area-items.collection .items-restaurent .infor-item {
+.area-items.collection .items-restaurant .infor-item {
     border: none;
 }
-.items-restaurent .infor-item p{
+.items-restaurant .infor-item p{
     font-size: 12px;
     color: #0288d1;
 }
@@ -471,15 +471,15 @@ body {
     border: 1px solid #ccc;
     border-radius: 6px;
 }
-.area-items.diverse .items-restaurent {
+.area-items.diverse .items-restaurant {
     display: flex;
     flex-direction: column;
 }
-.area-items.diverse .items-restaurent .item-food {
+.area-items.diverse .items-restaurant .item-food {
     width: 100%;
 
 }
-.area-items.diverse .items-restaurent .item-food a{
+.area-items.diverse .items-restaurant .item-food a{
     display: flex;
 }
 .area-items.diverse .item-food .img-food {
