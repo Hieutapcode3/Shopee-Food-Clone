@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+}
+html {
+    font-family: "Noto Sans", Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+.container-header {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    left: 0;
+    background-color: #fff;
+    font-size: 14px;
+}
+.container-header .header-content {
+    max-width: 1200px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.container-header .header-content .logo {
+    margin-right: 72px;
+    position: absolute;
+    right: 100%;
+}
+.header-content .logo img {
+    height: 30px;
+}
+.container-header .header-content .nav {
+    padding-left: 42px;
+    width: 877px;
+    flex-grow: 1;
+}
+.header-content .nav li {
+    display: inline-block;
+    padding: 26px 12px 21px;
+    border-bottom: 4px solid #fff;
+    cursor: pointer;
+}
+.nav .li.active {
+    border-bottom: 4px solid #ee4d2d;
+}
+.nav .li.active a{
+    font-weight: 700;
+    color: #ee4d2d;
+}
+.nav li a {
+    text-decoration: none;
+    color: black;
+    box-sizing: content-box
+}
+.nav a:hover {
+    color: red;
+}
+.container-header .header-content .search {
+    padding: 0px 10px;
+    padding-top: 6px;
+}
+.header-content .search a {
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0 10px;
+}
+.header-content .app-driver {
+    padding: 7px 9px 7px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid #ee4d2d;
+    cursor: pointer;
+    background-color: #ee4d2d;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+    position: absolute;
+    left: 100%;
+    white-space: nowrap;
+    font-family: "Noto Sans", Arial, sans-serif;
+}
+
+/* CONTENT */
+.content {
+    max-width: 100%;
+    margin-top: 70px;
+    height: 3000px;
+}
+.content .banner-shipper {
+    height: 100vh;
+    background: url(../img/bg-partnership.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+}
+.banner-shipper .container {
+    width: 1200px;
+    margin: auto;
+}
+.banner-shipper .container .form-information {
+    float: left;
+    width: 400px;
+    background-color: #fff;
+    margin: 30px 0;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.container .form-information h3 {
+    font-size: 18px;
+    color: #ee4d2d;
+    padding: 24px 10px 16px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.container .form-information .content-form {
+    padding: 25px 30px 15px;
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+}
+.form-information .content-form select{
+    font-size: 18px;
+    height: 42px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding: 5px 5px 5px 15px;
+}
+.form-information .content-form select:focus {
+    font-size: 16px;
+}
+.form-information .content-form  input {
+    font-size: 16px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding: 5px 5px 5px 15px;
+}
+.form-information .content-form  input:focus{
+    font-size: 18px;
+}
+.form-information .content-form textarea {
+    font-size: 16px;
+    height: 82px;
+    transition: .3s;
+    resize: none;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding: 5px 5px 5px 15px;
+    font-family: inherit;
+}
+.form-information .content-form .check-robot {
+    display: flex;
+    height: 78px;
+    padding: 4px;
+    border: 1px solid #ccc;
+}
+.content-form .check-robot img {
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+.content-form .check-robot p {
+    width: 35%;
+    margin: 30px 0;
+    font-size: 18px;
+}
+.content-form .check-robot .checkbox-container {
+    float: right;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.check-robot .checkbox-container label {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.content-form .check-robot .type-checkbox {
+    width: 20px;
+    height: 20px;
+    transform: scale(1.5);
+    margin-top: 5px;
+}
+.form-information .content-form textarea:focus {
+    font-size: 18px;
+}
+.form-information .content-form p {
+    font-size: 14px;
+    color: #464646;
+    margin-bottom: 16px;
+}
+.form-information .content-form .btn-register {
+    margin-top: 16px;
+    padding: 4px 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #ee4d2d;
+    border: none;
+    border-radius: 6px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.banner-shipper .container .title-banner {
+    overflow: hidden;
+    color: #fff;
+    padding-top: 5%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 10%;   
+}
+.container .title-banner p:last-child {
+    text-transform: uppercase;
+}
+.partner-list {
+    padding: 77px 0 86px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+}
+.partner-list h1 {
+    font-size: 45px;
+    padding-bottom: 75px;
+    color: #3c3c3c;
+}
+.partner-list .container-service {
+    display: flex;
+    width: 100%;
+}
+.partner-list .container-service .service-item {
+    width: calc(25% - 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+}
+.container-service .service-item img {
+    width: 96px;
+}
+.container-service .service-item h3 {
+    font-size: 20px;
+    color: #ee4d2d;
+    padding: 16px 0 12px;
+    text-align: center;
+}
+.container-service .service-item p{
+    font-size: 18px;
+    text-align: center;
+    line-height: 24px;
+}
+.register-process {
+    padding: 86px 0 158px;
+    width: 1200px;
+    margin: auto;
+}
+.register-process h1 {
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 45px;
+}
+.register-process .container-process {
+}
+.register-process .container-process img {
+    width: 214px;
+    margin: 0 0 36px 50px;
+}
+.register-process .container-process .container-register-step {
+    display: flex;
+    position: relative;
+}
+.container-process .container-register-step .cross-bar {
+    position: absolute;
+    width: calc(100% - 176px);
+    height: 8px;
+    left: 88px;
+    top: 19px;
+    background-color: #ee4d2d;
+    z-index: -1;
+}
+.container-process .container-register-step .register-step-item {
+    width: calc(100%/7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-register-step .register-step-item .step-index {
+    width: 46px;
+    height: 46px;
+    font-size: 24px;
+    margin-bottom: 17px;
+    color: #fff;
+    background-color: #ee4d2d;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 46px;
+}
+.container-register-step .register-step-item p {
+    text-align: center;
+    line-height: 24px;
+}
+.require-information {
+    background-color: #f5f5f5;
+    padding: 62px 0;
+}
+.require-information .container-require {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+}
+.require-information .require {
+    width: calc(40% - 20px);
+    padding: 0 35px 0 10px;
+}
+.require-information .require h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.require-information .require ul {
+    margin-bottom: 16px;
+    padding-top: 4px;
+    padding-left: 32px;
+}
+.require-information .require  ul:nth-of-type(2) {
+    list-style-type: none;
+}
+.require-information .require li {
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 400;
+}
+.require ul>li>a {
+    text-decoration: none;
+    color: #0288d1;
+}
+.require-information .dossier-register {
+    width: 45% ;
+    padding: 0 10px 0 63px;
+    margin-left: 46px;
+    border-left: 1px solid #979797;
+}
+.require-information .dossier-register h1 {
+    font-size: 28px;
+    margin-bottom: 28px;
+}
+.require-information .dossier-register ul {
+    list-style: none;
+    margin-left: 18px;
+}
+.require-information .dossier-register li {
+    font-size: 24px;
+    padding-bottom: 28px;
+    margin-left: 16px;
+    position: relative;
+}
+.require-information .dossier-register li::before {
+    content: url(../img/rebranding-check.svg);
+    position: absolute;
+    left: -45px;
+    top: 2px;
+}
+.require-information .dossier-register li:last-child::before {
+    content: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.container-footer {
+    width: 1200px;
+    padding-top: 32px;
+    padding-bottom: 25px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.container-footer h4 {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.container-footer .company  ul{
+    list-style-type: none;
+    padding: 0;
+    line-height: 25px;
+}
+.container-footer .company a {
+    text-decoration: none;
+    color: #08f;
+}
+.container-footer .apps-dowload span {
+    display: flex;
+    flex-direction: column;
+}
+.container-footer .apps-dowload  a{
+    margin-bottom: 25px;
+    width: 55%;
+}
+.container-footer .apps-dowload img {
+    width: 100%;
+    border-radius: 6px;
+}
+.container-footer .social-media {
+    width: 241px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-footer .social-media img {
+    max-width: 100px;
+    margin-top: 14px;
+    margin-bottom: 17px;
+    cursor: pointer;
+}
+.container-footer .social-media p {
+    font-size: 12px;
+    color: #959595;
+}
+.container-footer .social-media span {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container-footer .social-media span a{
+    text-decoration: none;
+    margin: 0 8px;
+}
+.container-footer .social-media span a:hover p {
+    background-color: #ba30a7;
+}
+.container-footer .social-media span p {
+    font-size: 15px;
+    padding: 8px 10px;
+    background-color: #959595;
+    border-radius: 50%;
+}
+.container-footer .social-media span p i {
+    color: #fff;
+}
+.container-footer .addr-company {
+    text-align: right;
+}
+.container-footer .addr-company p {
+    margin-bottom: 3px;
+    color: #464646;
+}
+.container-footer .addr-company a{
+    text-decoration: none;
+    color: #08f;
+}
+.container-footer .addr-company span>a {
+    width: 177px;
+    display: block;
+    float: right;
+}
+.container-footer .addr-company img {
+    width: 100%;
+}

@@ -5,4 +5,7 @@
     .container-header .header-content .nav {
         width: 657px;
     }
+    .container-header .header-content .app-driver {
+        position: static;
+    }
 }
