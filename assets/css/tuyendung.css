@@ -3,11 +3,17 @@
 }
 html {
     font-family: "Noto Sans", Arial, sans-serif;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
+}
+.container {
+    width: 1200px;
+    margin: auto;
 }
 
 /* HEADER */
-
+.page {
+    padding-top: 70px;
+}
 .container-header {
     height: 70px;
     position: fixed;
@@ -89,8 +95,6 @@ html {
 /* CONTENT */
 .content {
     max-width: 100%;
-    margin-top: 70px;
-    height: 3000px;
 }
 .content .banner-shipper {
     height: 100vh;
@@ -98,10 +102,7 @@ html {
     background-size: cover;
     position: relative;
 }
-.banner-shipper .container {
-    width: 1200px;
-    margin: auto;
-}
+
 .banner-shipper .container .form-information {
     float: left;
     width: 400px;
@@ -375,6 +376,114 @@ html {
 .require-information .dossier-register li:last-child::before {
     content: none;
 }
+.banner-dow-app {
+    padding: 65px 0;
+    background: url(../img/partner-banner-3.jpg) no-repeat 50%;
+    background-size: cover;
+}
+.banner-dow-app .container-banner {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-dow-app .container-banner .img-qr {
+    padding: 0 10px;
+}
+.banner-dow-app .container-banner .img-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container-banner .img-app img {
+    width: 347px;
+    border-radius: 16px;
+}
+.container-banner .des-app {
+    width: 30%;
+}
+.container-banner .des-app .title{
+    font-size: 36px;
+    color: #fff;
+}
+.container-banner .des-app a {
+    width: 100%;
+}
+.container-banner .des-app button {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 3px solid #fff;
+    font-weight: 700;
+    background-color: transparent;
+    margin-top: 15px;
+    padding: 16px 27px;
+    transition:  .2s linear;
+    cursor: pointer;
+}
+.container-banner .des-app button:hover {
+    background-color: #fff;
+    color: #d00001;
+}
+.list-question {
+    padding: 60px 0;
+}
+.list-question .container h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 37px;
+}
+.list-question .container .card {
+    border: 1px solid #c2c2c2;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.container .card .card-header {
+    color: #3c3c3c;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    padding: 22px 70px;
+    position: relative;
+}
+.card .card-header::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 79px;
+    border: solid #3c3c3c;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-135deg);
+    transition: transform .2s;
+}
+.card .card-header.active::after {
+    transform: rotate(45deg) translateY(-50%);
+}
+.container .card .des-card {
+    display: none;
+}
+.card .des-card .card-body {
+    font-size: 24px;
+    color: #3c3c3c;
+    padding: 17px 0 23px;
+    margin: 0 70px;
+    border: 0;
+    position: relative;
+    line-height: 33px;
+    border-top: 1px solid #ccc;
+}
+.card .des-card .card-body a {
+    text-decoration: none;
+    color: #0288d1;
+}
+.des-card .card-body p {
+    margin-bottom: 16px;
+}
+
 
 
 
