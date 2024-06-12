@@ -235,6 +235,28 @@ body{
 
 }
 
+.kind-restaurant .tag-preferred {
+    text-transform: none;
+    background-color: #f13233;
+    color: #fff;
+    padding: 3px 5px;
+    z-index: 1;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.kind-restaurant span{
+    margin: auto 0;
+}
+
+.kind-restaurant span > a{
+    text-decoration: none;
+    font-size: 10px;
+    color: #0288d1;
+    margin-left: 10px;
+
+}
+
 .details-restaurant .details-restaurant-info .name-restaurant{
     margin-top: 0px;
     font-size: 22px;
@@ -418,7 +440,7 @@ body{
 }
 
 .details-restaurant-info .service-item .icon{
-    background-image: url(partner-vi.png);
+    background-image: url(/assets/img/partner-vi.png);
     position: absolute;
     cursor: pointer;
     top: 20px; 
@@ -567,12 +589,28 @@ body{
     margin: auto;
 }
 
-.menu-restaurant-detail .promotion-orders .content{
+.menu-restaurant-detail .promotion-orders .promotion-item .content{
     position: relative;
     border-bottom: 1px solid #ebe9c9;
     padding-top: 10px;
-    padding-bottom: 10px
+    min-height: 55px;
 }
+
+.promotion-item .code-copy{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    border: 0;
+    background: none;
+    font-size: 12px;
+    color: #575757;
+    font-weight: 700;
+}
+.promotion-item .code-copy .fa-copy{
+    padding-left: 5px;
+}
+
+
 
 
 .menu-restaurant-detail .search-item .input-group{
@@ -718,12 +756,14 @@ body{
     color: #fff;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
+    transition: all 1.5s ease;
 }
 
 .qr-code canvas{
     background-image: url(/assets/img/qrcode-shoppefood.png);
 }
+
 
 .clearfix::after{
     display: block;

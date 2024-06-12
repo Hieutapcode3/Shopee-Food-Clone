@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/icon/themify-icons/themify-icons.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=vietnamese">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 </head>
 <body class="body-food">
@@ -93,7 +94,15 @@
                     </nav>
                     
                     <div class="kind-restaurant">
-                        <span>Shop online</span>
+                        <div class="tag-preferred">
+                            <i class="fa fa-thumbs-up"></i>
+                            Yêu thích
+                        </div>
+                        <span>Shop online
+                            <span> - 
+                                <a href="">Chi nhánh</a>
+                            </span>
+                        </span>
                     </div>
 
                     <h1 class="name-restaurant">
@@ -173,17 +182,17 @@
                         <div class="menu-restaurant-category">
                             <div class="list-category" id="scroll-spy">
                                 <div class="scrollbar-container ps">
-                                    <div id="chedau" class="item active">
-                                        <span  title="Chè đậu các loại" class="item-link">Chè đậu các loại</span>
+                                    <div  class="item active">
+                                        <span id="chedau" title="Chè đậu các loại" class="item-link">Chè đậu các loại</span>
                                     </div>
-                                    <div id="che" class="item">
-                                        <span title="Chè" class="item-link">Chè</span>
+                                    <div class="item">
+                                        <span id="che"  title="Chè" class="item-link">Chè</span>
                                     </div>
-                                    <div id="tsav" class="item">
-                                        <span  title="Trà sữa - Ăn Vặt" class="item-link">Trà sữa - Ăn Vặt</span>
+                                    <div class="item">
+                                        <span id="tsav" title="Trà sữa - Ăn Vặt" class="item-link">Trà sữa - Ăn Vặt</span>
                                     </div>
-                                    <div id="combo" class="item">
-                                        <span title="COMBO PHẢI THỬ" class="item-link">COMBO PHẢI THỬ</span>
+                                    <div  class="item">
+                                        <span id="combo" title="COMBO PHẢI THỬ" class="item-link">COMBO PHẢI THỬ RẤT NGONNNNNNN</span>
                                     </div>
                                 </div>
                             </div>
@@ -196,12 +205,17 @@
                                     <div class="content">
                                         Giảm giá một số món ăn trên menu
                                     </div>
+                                    
                                 </div>
                                 <div class="promotion-item">
                                     <img src="https://mms.img.susercontent.com/vn-11134513-7r98o-ltm6j1v3kah653" alt="" class="icon-promotion">
                                     <div class="content">
                                         TECHCOMBANK giảm 50K cho đơn hàng từ 150K
                                     </div>
+                                    <button class="code-copy">
+                                        <span>Copy code</span>
+                                        <span class="fa fa-copy"></span>
+                                    </button>
                                 </div>
 
                             </div>
@@ -508,7 +522,7 @@
                 </div>
                 <div class="qr-code" id="QRCode">
                     <canvas height="300" width="300" style="height: 200px;width:200px;"></canvas>
-                    <div>
+                    <div >
                         Quét mã để đặt món
                         <br>
                          trên app Shopee

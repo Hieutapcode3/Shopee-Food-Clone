@@ -1,3 +1,31 @@
+// import data from "./data.json" with {type: "json"};
+
+
+
+// const renderFood = () => {
+//     const item_restaurant = document.getElementById("item");
+//     const ten_mon = document.createElement("div");
+//     ten_mon.innerHTML = "";
+//     data.forEach(page => {
+//         if(page.page == 1){
+//             page.mon_an.forEach(name_mon =>{
+                
+//                 // if(name_mon == "bún bò"){
+//                 //     ten_mon.innerHTML =
+//                 //     `<div><h1>${name_mon.name}</h1></div>`;
+//                 //     item_restaurant.appendChild(ten_mon);
+//                 // } else {
+//                 //     ten_mon.innerHTML =
+//                 //     `<div><h1>${name_mon.name}</h1></div>`;
+//                 //     item_restaurant.appendChild(ten_mon);
+//                 // }
+//             })
+//         }
+
+//     })
+// }
+// renderFood();
+
 document.addEventListener("DOMContentLoaded", function() {
     var district = document.getElementById("District");
     var category = document.getElementById("Category");
@@ -106,31 +134,59 @@ function updateUnderItems() {
         countElement.textContent = `(${checkedCount})`;
     });
 }
-
-
-
-
-
-
-
-
   
 
 
 document.addEventListener('DOMContentLoaded', function() {
     const paginationItems = document.querySelectorAll('.pagination li');
 
-    paginationItems.forEach(item => {
-        item.addEventListener('mouseenter', function() {
+    paginationItems.forEach((item, index) => {
+        item.addEventListener('click', function() {
+            // Do not add 'active' class to the first and last elements
+            if (index === 0 || index === paginationItems.length - 1) {
+                return;
+            }
+            
+            // Remove 'active' class from all items
+            paginationItems.forEach(p => p.classList.remove('active'));
+            // Add 'active' class to the clicked item
             item.classList.add('active');
-        });
-
-        item.addEventListener('mouseleave', function() {
-            item.classList.remove('active');
         });
     });
 });
 
+
+
+// const renderNumPage = () => {
+//     const num_page = [1, 2, 3, 4, 5, 6, 7, 8];
+//     const page = document.getElementById("page");
+//     // Clear previous content
+//     page.innerHTML = "";
+
+//     num_page.forEach((num, i) => {
+//         const li = document.createElement("li");
+//         li.innerHTML = `<a href="#">${num}</a>`;
+//         page.appendChild(li);
+//         console.log(`Số ${num} ở vị trí ${i}`);
+
+//         li.addEventListener("click", () => {
+//             // Remove selected class from all list items
+//             const allLi = page.querySelectorAll("li");
+//             allLi.forEach(item => {
+//                 item.classList.remove("active");
+//             });
+
+//             // Apply selected class to the clicked item
+//             li.classList.add("active");
+
+//             let trang = [];
+//             trang.push(num);
+//             console.log(trang);
+//         });
+//     });
+// };
+
+// renderNumPage();
 
 
 

@@ -433,7 +433,6 @@ body{
     left: 7px;
     padding: 3px 5px;
     z-index: 1;
-
 }
 
 .list-restaurant .item-content .img-restaurant .tag-preferred i{
@@ -550,12 +549,15 @@ body{
     text-align: center;
     margin-top: 30px;
     max-height: 30px;
-    overflow: hidden;
+    display: flex;
     list-style: none;
+    justify-content: center;
 }
 
 .pagination li {
     display: inline-block;
+    margin-right: 5px;
+    
 }
 
 .pagination .tag {
@@ -565,7 +567,6 @@ body{
 
 .pagination a {
     margin-right: 5px;
-    color: #252525;
     text-decoration: none;
     width: 40px;
     font-size: 13px;
@@ -573,13 +574,27 @@ body{
     line-height: 30px;
     margin: 0 5px;
     display: inline-block;
+    color: #252525;
+    transition: all 0.5s ease;
 }
 
 .pagination .active a {
     background-color: #cf2127;
-    color: #fff;
+    color: #fff !important;
 }
 
+.pagination li a:hover{
+    background-color: #cf2127;
+    color: #fff;
+    
+}
+
+.pagination .tag a
+{
+    background-color: transparent;
+    color: #252525;
+    pointer-events: none;
+}
 /* .icon-paging-pre{
     width: 18px;
     height: 18px;
