@@ -466,6 +466,17 @@ body{
     height: 94px;
 }
 
+.info-restaurant .kind-restaurant{
+    font-size: 12px;
+    color: #959595;
+    text-transform: uppercase;
+    padding: 8px 8px 6px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .list-restaurant .info-restaurant .info-basic{
     border-bottom: 1px solid #ebebeb;
     padding: 10px;
@@ -560,10 +571,10 @@ body{
     
 }
 
-.pagination .tag {
+/* .pagination .tag {
     
-    /* background-image: url('/assets/img/paging-pre.png');  */
-}
+    /* background-image: url('/assets/img/paging-pre.png');  
+} */
 
 .pagination a {
     margin-right: 5px;
