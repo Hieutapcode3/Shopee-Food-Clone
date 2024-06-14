@@ -72,14 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-document.addEventListener("click", function(event) {
-    var sortElement = document.querySelector(".sort");
-    if (event.target.classList.contains("sort")) {
-        event.target.classList.add("large");
-    } else {
-        sortElement.classList.remove("large");
-    }
-});
+
 
 document.addEventListener("DOMContentLoaded", function() {
     var customCheckboxes = document.querySelectorAll(".custom-checkbox input[type='checkbox']");
@@ -134,7 +127,18 @@ function updateUnderItems() {
         countElement.textContent = `(${checkedCount})`;
     });
 }
+
   
+document.addEventListener("click", function(event) {
+    var sortElement = document.querySelector(".sort");
+    if (event.target.classList.contains("sort")) {
+        event.target.classList.add("large");
+    } else {
+        sortElement.classList.remove("large");
+    }
+});
+
+
 
 
 document.addEventListener('DOMContentLoaded', function() {

@@ -23,6 +23,7 @@ document.getElementById('combo').addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
+
 document.addEventListener("DOMContentLoaded", function() {
     const qrCode = document.getElementById("QRCode");
     const btnAddings = document.querySelectorAll(".btn-adding");
