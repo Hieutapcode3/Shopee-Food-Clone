@@ -24,50 +24,51 @@
                             <p class="select-place">Hà Nội<i class="ti-angle-down"></i></p>
                             <div class="dropdown-menu">
                                 <div class="place-items">
-                                    <p>Tp.hcm</p>
+                                    <p>TP.HCM</p>
                                     <p>92046 địa điểm</p>
                                 </div>
                                 <div class="place-items">
-                                    <p>Tp.hcm</p>
+                                    <p>Đà Nẵng</p>
                                     <p>92046 địa điểm</p>
                                 </div>
                                 <div class="place-items">
-                                    <p>Tp.hcm</p>
+                                    <p>Cần Thơ</p>
                                     <p>92046 địa điểm</p>
                                 </div>
                                 <div class="place-items">
-                                    <p>Tp.hcm</p>
+                                    <p>Hải Phòng</p>
                                     <p>92046 địa điểm</p>
                                 </div>
                                 <div class="place-items">
-                                    <p>Tp.hcm</p>
+                                    <p>Huế</p>
                                     <p>92046 địa điểm</p>
                                 </div>
                                 <div class="place-items">
-                                    <p>Tp.hcm</p>
+                                    <p>Vũng Tàu</p>
                                     <p>92046 địa điểm</p>
                                 </div>
                                 <div class="place-items">
-                                    <p>Tp.hcm</p>
+                                    <p>Cà Mau</p>
                                     <p>92046 địa điểm</p>
                                 </div>
                                 <div class="place-items">
-                                    <p>Tp.hcm</p>
+                                    <p>Cao Bằng</p>
                                     <p>92046 địa điểm</p>
                                 </div>
                                 <div class="place-items">
-                                    <p>Tp.hcm</p>
+                                    <p>Hải Dương</p>
                                     <p>92046 địa điểm</p>
                                 </div>
                             </div>
                         </div>
                         <ul class="nav">
-                            <li class="li"><a href="#">Đồ ăn</a></li>
-                            <li class="li"><a href="#">Thực phẩm</a></li>
-                            <li class="li"><a href="#">Rượu bia</a></li>
-                            <li class="li"><a href="#">Hoa</a></li>
-                            <li class="li"><a href="#">Siêu thị</a></li>
-                            <li class="li"><a href="#">Thú cưng</a></li>
+                            <li class="li"><a href="#" data-category="food">Đồ ăn</a></li>
+                            <li class="li"><a href="#" data-category="grocery">Thực phẩm</a></li>
+                            <li class="li"><a href="#" data-category="alcohol">Rượu bia</a></li>
+                            <li class="li"><a href="#" data-category="flowers">Hoa</a></li>
+                            <li class="li"><a href="#" data-category="supermarket">Siêu thị</a></li>
+                            <li class="li"><a href="#" data-category="medicine">Thuốc</a></li>
+                            <li class="li"><a href="#" data-category="pets">Thú cưng</a></li>
                         </ul>
                         <div class="search">
                             <i class="ti-search js-search"></i>
@@ -84,14 +85,14 @@
                         <div class="side-search">
                             <div>
                                 <h1>Đặt Đồ ăn,giao hàng từ 20'...</h1>
-                                <p>Có 45739 Địa Điểm Ở Hà Nội Từ 00:00 - 23:59</p>
+                                <p>Có 45739 Địa Điểm Ở <span class="city">Hà Nội</span> Từ 00:00 - 23:59</p>
                             </div>
                             <div class="form-search">
                                 <input type="text" placeholder="Tìm địa điểm, món ăn, địa chỉ...">
                                 <a href="#"><button><i class="ti-search"></i></button></a>
                             </div>
                             <div class="food-list">
-                                <ul>
+                                <ul id="category-list">
                                     <li><a href="restaurant-list.html">All</a></li>
                                     <li><a href="restaurant-list.html">Đồ ăn</a></li>
                                     <li><a href="restaurant-list.html">Đồ uống</a></li>
@@ -112,8 +113,8 @@
                                 <p>Sử dụng App ShopeeFood để có nhiều giảm giá <br>
                                     và trải nghiệm tốt hơn</p>
                                 <div class="img-app">
-                                    <a href="#" target="_blank"><img src="./assets/img/AppStore-vn.png" alt=""></a>
-                                    <a href="#" target="_blank"><img src="./assets/img/PlayStore-vn.png" alt=""></a>
+                                    <a href="https://itunes.apple.com/us/app/deliverynow/id1137866760" target="_blank"><img src="./assets/img/AppStore-vn.png" alt=""></a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.deliverynow" target="_blank"><img src="./assets/img/PlayStore-vn.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +132,7 @@
                                 <div class="area-items">
                                     <div class="title-area">
                                         <p>Ưu đãi</p>
-                                        <a href="#"><i class="ti-layout-grid2-alt"></i> Xem tất cả</a>
+                                        <a href="restaurant-list.html"><i class="ti-layout-grid2-alt"></i> Xem tất cả</a>
                                     </div>
                                     <div class="items-restaurant">
                                         <div class="item-food">
@@ -267,24 +268,37 @@
                                                 </div>
                                                 <p class="opentime-status"></p>
                                             </a>
+                                        </div>
+                                        <div class="item-food">
+                                            <a href="restaurant.html" target="blank">
+                                                <div class="img-food">
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsu99wx8nah054@resize_ss640x400!@crop_w640_h400_cT" alt="">
+                                                    <div class="tag-like">
+                                                        <p><i class="fa fa-thumbs-up"></i> Yêu thích</p>
+                                                    </div>
+                                                </div>
+                                                <div class="infor-item">
+                                                    <h4>Chè Ngon Phố - Cổ Nhuế</h4>
+                                                    <p class="addr-item">136 Ngõ 43 Cổ Nhuế, P. Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội</p>
+                                                    <p class="item-promotion"><i class="ti-shopping-cart-full"></i> Giảm món</p>
+                                                </div>
+                                                <p class="opentime-status"></p>
+                                            </a>
                                             
                                         </div>
                                     </div>
-                                    <button>Xem thêm <i class="fas fa-redo"></i></button>
+                                    <button class="load-more">Xem thêm <i class="fas fa-redo"></i></button>
                                 </div>
                                 <div class="area-items collection">
                                     <div class="title-area">
                                         <p>Bộ sưu tập</p>
-                                        <a href="#"><i class="ti-layout-grid2-alt"></i> Xem tất cả</a>
+                                        <a href="restaurant-list.html"><i class="ti-layout-grid2-alt"></i> Xem tất cả</a>
                                     </div>
                                     <div class="items-restaurant">
                                         <div class="item-food">
                                             <a href="restaurant.html" target="_blank">
                                                 <div class="img-food">
-                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lvy9p63rok4993@resize_ss320x200!@crop_w320_h200_cT" alt="">
-                                                    <div class="tag-like">
-                                                        <p><i class="fa fa-thumbs-up"></i> Yêu thích</p>
-                                                    </div>
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lwdzypq1rm57e1@resize_ss320x320!@crop_w320_h320_cT" alt="">
                                                 </div>
                                                 <div class="infor-item">
                                                     <h4>ShopeeFood x MONO khao trà sữa 0Đ</h4>
@@ -295,10 +309,7 @@
                                         <div class="item-food">
                                             <a href="restaurant.html" target="_blank">
                                                 <div class="img-food">
-                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lvy9p63rok4993@resize_ss320x200!@crop_w320_h200_cT" alt="">
-                                                    <div class="tag-like">
-                                                        <p><i class="fa fa-thumbs-up"></i> Yêu thích</p>
-                                                    </div>
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lwdzypq1rm57e1@resize_ss320x320!@crop_w320_h320_cT" alt="">
                                                 </div>
                                                 <div class="infor-item">
                                                     <h4>ShopeeFood x MONO khao trà sữa 0Đ</h4>
@@ -309,10 +320,7 @@
                                         <div class="item-food">
                                             <a href="restaurant.html" target="_blank">
                                                 <div class="img-food">
-                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lvy9p63rok4993@resize_ss320x200!@crop_w320_h200_cT" alt="">
-                                                    <div class="tag-like">
-                                                        <p><i class="fa fa-thumbs-up"></i> Yêu thích</p>
-                                                    </div>
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lwdzypq1rm57e1@resize_ss320x320!@crop_w320_h320_cT" alt="">
                                                 </div>
                                                 <div class="infor-item">
                                                     <h4>ShopeeFood x MONO khao trà sữa 0Đ</h4>
@@ -323,10 +331,7 @@
                                         <div class="item-food">
                                             <a href="restaurant.html" target="_blank">
                                                 <div class="img-food">
-                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lvy9p63rok4993@resize_ss320x200!@crop_w320_h200_cT" alt="">
-                                                    <div class="tag-like">
-                                                        <p><i class="fa fa-thumbs-up"></i> Yêu thích</p>
-                                                    </div>
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lwdzypq1rm57e1@resize_ss320x320!@crop_w320_h320_cT" alt="">
                                                 </div>
                                                 <div class="infor-item">
                                                     <h4>ShopeeFood x MONO khao trà sữa 0Đ</h4>
@@ -337,10 +342,7 @@
                                         <div class="item-food">
                                             <a href="restaurant.html" target="_blank">
                                                 <div class="img-food">
-                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lvy9p63rok4993@resize_ss320x200!@crop_w320_h200_cT" alt="">
-                                                    <div class="tag-like">
-                                                        <p><i class="fa fa-thumbs-up"></i> Yêu thích</p>
-                                                    </div>
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lwdzypq1rm57e1@resize_ss320x320!@crop_w320_h320_cT" alt="">
                                                 </div>
                                                 <div class="infor-item">
                                                     <h4>ShopeeFood x MONO khao trà sữa 0Đ</h4>
@@ -351,10 +353,7 @@
                                         <div class="item-food">
                                             <a href="restaurant.html" target="_blank">
                                                 <div class="img-food">
-                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lvy9p63rok4993@resize_ss320x200!@crop_w320_h200_cT" alt="">
-                                                    <div class="tag-like">
-                                                        <p><i class="fa fa-thumbs-up"></i> Yêu thích</p>
-                                                    </div>
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lwdzypq1rm57e1@resize_ss320x320!@crop_w320_h320_cT" alt="">
                                                 </div>
                                                 <div class="infor-item">
                                                     <h4>ShopeeFood x MONO khao trà sữa 0Đ</h4>
@@ -365,10 +364,7 @@
                                         <div class="item-food">
                                             <a href="restaurant.html" target="_blank">
                                                 <div class="img-food">
-                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lvy9p63rok4993@resize_ss320x200!@crop_w320_h200_cT" alt="">
-                                                    <div class="tag-like">
-                                                        <p><i class="fa fa-thumbs-up"></i> Yêu thích</p>
-                                                    </div>
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lwdzypq1rm57e1@resize_ss320x320!@crop_w320_h320_cT" alt="">
                                                 </div>
                                                 <div class="infor-item">
                                                     <h4>ShopeeFood x MONO khao trà sữa 0Đ</h4>
@@ -379,10 +375,7 @@
                                         <div class="item-food">
                                             <a href="restaurant.html" target="_blank">
                                                 <div class="img-food">
-                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lvy9p63rok4993@resize_ss320x200!@crop_w320_h200_cT" alt="">
-                                                    <div class="tag-like">
-                                                        <p><i class="fa fa-thumbs-up"></i> Yêu thích</p>
-                                                    </div>
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lwdzypq1rm57e1@resize_ss320x320!@crop_w320_h320_cT" alt="">
                                                 </div>
                                                 <div class="infor-item">
                                                     <h4>ShopeeFood x MONO khao trà sữa 0Đ</h4>
@@ -393,10 +386,7 @@
                                         <div class="item-food">
                                             <a href="restaurant.html" target="_blank">
                                                 <div class="img-food">
-                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lvy9p63rok4993@resize_ss320x200!@crop_w320_h200_cT" alt="">
-                                                    <div class="tag-like">
-                                                        <p><i class="fa fa-thumbs-up"></i> Yêu thích</p>
-                                                    </div>
+                                                    <img src="https://down-bs-vn.img.susercontent.com/vn-11134512-7r98o-lwdzypq1rm57e1@resize_ss320x320!@crop_w320_h320_cT" alt="">
                                                 </div>
                                                 <div class="infor-item">
                                                     <h4>ShopeeFood x MONO khao trà sữa 0Đ</h4>
@@ -405,7 +395,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <button>Xem thêm <i class="fas fa-redo"></i></button>
+                                    <button class="load-more-2">Xem thêm <i class="fas fa-redo"></i></button>
                                 </div>
                                 <div class="area-items diverse">
                                     <div class="title-area">
@@ -543,7 +533,7 @@
                                         </div>
                                         
                                     </div>
-                                    <button>Xem thêm <i class="fas fa-redo"></i></button>
+                                    <button class="load-more-3">Xem thêm <i class="fas fa-redo"></i></button>
                                 </div>
                                 
                             </div>
@@ -725,8 +715,90 @@
                 <div class="modal-search-form">
                     <span>Đặt Đồ ăn, giao hàng từ 20'... có 46162 địa điểm ở Hà Nội từ 00:00 - 23:59</span>
                     <form action="">
-                        <input type="text">
+                        <input type="text" class="js-input-search">
                     </form>
+                    <div class="loading-spinner"></div>
+                    <div class="search-result">
+                        <div class="main-result">
+                            <div class="product">
+                                <a href="">
+                                    <div class="img-product">
+                                        <img src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsu8ug1bkzo9a0@resize_ss280x175!@crop_w280_h175_cT" alt="">
+                                    </div>
+                                    <div class="infor-product">
+                                        <p class="name-product">A-Phú - Mì Trộn Indomie & Ăn Vặt - Hồng Mai</p>
+                                        <p class="addr-product">7 Ngõ 158 Hồng Mai, P. Bạch Mai, Hai Bà Trưng, Hà Nội</p>
+                                    </div>
+                                    <div class="opentime-status">
+                                        <span>Mở cửa</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="">
+                                    <div class="img-product">
+                                        <img src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsu8ug1bkzo9a0@resize_ss280x175!@crop_w280_h175_cT" alt="">
+                                    </div>
+                                    <div class="infor-product">
+                                        <p class="name-product">A-Phú - Mì Trộn Indomie & Ăn Vặt - Hồng Mai</p>
+                                        <p class="addr-product">7 Ngõ 158 Hồng Mai, P. Bạch Mai, Hai Bà Trưng, Hà Nội</p>
+                                    </div>
+                                    <div class="opentime-status">
+                                        <span>Mở cửa</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="">
+                                    <div class="img-product">
+                                        <img src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsu8ug1bkzo9a0@resize_ss280x175!@crop_w280_h175_cT" alt="">
+                                    </div>
+                                    <div class="infor-product">
+                                        <p class="name-product">A-Phú - Mì Trộn Indomie & Ăn Vặt - Hồng Mai</p>
+                                        <p class="addr-product">7 Ngõ 158 Hồng Mai, P. Bạch Mai, Hai Bà Trưng, Hà Nội</p>
+                                    </div>
+                                    <div class="opentime-status">
+                                        <span>Mở cửa</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="">
+                                    <div class="img-product">
+                                        <img src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsu8ug1bkzo9a0@resize_ss280x175!@crop_w280_h175_cT" alt="">
+                                    </div>
+                                    <div class="infor-product">
+                                        <p class="name-product">A-Phú - Mì Trộn Indomie & Ăn Vặt - Hồng Mai</p>
+                                        <p class="addr-product">7 Ngõ 158 Hồng Mai, P. Bạch Mai, Hai Bà Trưng, Hà Nội</p>
+                                    </div>
+                                    <div class="opentime-status">
+                                        <span>Mở cửa</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="">
+                                    <div class="img-product">
+                                        <img src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsu8ug1bkzo9a0@resize_ss280x175!@crop_w280_h175_cT" alt="">
+                                    </div>
+                                    <div class="infor-product">
+                                        <p class="name-product">A-Phú - Mì Trộn Indomie & Ăn Vặt - Hồng Mai</p>
+                                        <p class="addr-product">7 Ngõ 158 Hồng Mai, P. Bạch Mai, Hai Bà Trưng, Hà Nội</p>
+                                    </div>
+                                    <div class="opentime-status">
+                                        <span>Mở cửa</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-search">
+                            <div class="container-footer-search">
+                                <span><i class="ti-search"></i></span>
+                                Tìm thêm kết quả cho
+                                <span class="key-word">a</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

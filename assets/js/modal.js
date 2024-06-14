@@ -55,3 +55,25 @@ modal_search_container.addEventListener("animationend", () => {
     modal_search_container.classList.remove("modal-fadeOut");
   }
 });
+
+const inputSearch = document.querySelector(".js-input-search");
+const searchResult = document.querySelector(".search-result");
+const keyWord = document.querySelector(".key-word");
+const loadingSpinner = document.querySelector(".loading-spinner");
+
+inputSearch.addEventListener("input", () => {
+  const value = inputSearch.value.trim();
+  if (value === "") {
+    searchResult.style.display = "none";
+    loadingSpinner.style.display = "none";
+  } else {
+    searchResult.style.display = "none";
+    loadingSpinner.style.display = "block";
+    keyWord.textContent = value;
+
+    setTimeout(() => {
+      loadingSpinner.style.display = "none";
+      searchResult.style.display = "block";
+    }, 1000);
+  }
+});
