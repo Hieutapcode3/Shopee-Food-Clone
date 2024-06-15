@@ -1,4 +1,4 @@
-@media screen and (max-width:1700px) {
+@media screen and (max-width:1700px) and (min-width:1050px){
     .container-header .header-content .logo {
         position: static;
     }
@@ -8,4 +8,10 @@
     .container-header .header-content .app-driver {
         position: static;
     }
+}
+@media screen and (max-width:1050px) {
+    .container-header .header-content .logo {
+        position: static;
+    }
+
 }

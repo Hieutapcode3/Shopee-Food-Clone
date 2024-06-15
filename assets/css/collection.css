@@ -209,7 +209,7 @@ body{
 .toolbar .box{
     background-color: rgb(6, 92, 232);
     color: #fff;
-    padding: 0px 10px;
+    padding: 1px 14px;
     margin-right: 10px;
     vertical-align: bottom;
     border-radius: 4px;
