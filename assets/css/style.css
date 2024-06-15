@@ -313,25 +313,24 @@ body {
     padding-left: 15px;
     flex-grow: 1;
 }
-.container-content .container-items-food .list-items-food {
-}
-
 .container-items-food .list-items-food .area-items {
     background-color: #fff;
     padding: 13px 40px 10px;
     border-radius: 6px;
     border: 1px solid #d7d7d7;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .list-items-food .area-items >button {
     text-align: center;
     text-decoration: none;
     font-size: 14px;
-    width: 100%;
     background-color: #fff;
     border: none;
     color: #0288d1;
-    margin: 3px 0;
+    margin: 3px auto;
     cursor: pointer;
     font-family: inherit;
 }

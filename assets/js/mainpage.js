@@ -21,13 +21,13 @@ function updateFixedTop() {
 
   window.addEventListener("scroll", () => {
     const containerRect = container.getBoundingClientRect();
-    const containerBottom = containerRect.bottom;
+    const containerBottom = containerRect.bottom - containerMarginBottom;
     const windowHeight = window.innerHeight;
 
     if (containerBottom <= windowHeight) {
       wallBanner.style.position = "absolute";
       wallBanner.style.top = fixedTop + "px";
-    } else if (containerRect.bottom > windowHeight) {
+    } else if (containerRect.bottom - containerMarginBottom > windowHeight) {
       wallBanner.style.position = "fixed";
       wallBanner.style.top = initialTop + "px";
     }
