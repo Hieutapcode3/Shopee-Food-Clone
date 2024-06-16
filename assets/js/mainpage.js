@@ -6,14 +6,15 @@ const containerItemFood = document.querySelector(".container-items-food");
 const initialTop = 70;
 const containerMarginBottom = 68;
 const windowWidth = window.innerWidth;
+let fixedTop;
 function updateFixedTop() {
   const containerItemFoodHeight = containerItemFood.offsetHeight;
   if (windowWidth >= 1200) {
-    // Kích thước 100%
     fixedTop = containerItemFoodHeight - 783;
-  } else if (windowWidth >= 900) {
-    fixedTop = containerItemFoodHeight - 270;
+  } else if (windowWidth >= 905) {
+    fixedTop = containerItemFoodHeight - 700;
   } else {
+    fixedTop = 0;
   }
 
   window.addEventListener("scroll", () => {

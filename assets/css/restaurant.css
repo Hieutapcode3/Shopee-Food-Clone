@@ -545,6 +545,11 @@ body{
     color: #fff
 }
 
+.list-category .boiden{
+    background-color: #959595;
+    color: #fff
+}
+
 .menu-restaurant-content-tab {
     position: relative
 }
@@ -700,7 +705,6 @@ body{
     width: auto;
     max-width: none;
     margin-left: auto;
-    align-items: center; 
     margin-right: 20px; 
 }
 
@@ -760,8 +764,14 @@ body{
     transition: all 1.5s ease;
 }
 
-.qr-code canvas{
-    background-image: url(/assets/img/qrcode-shoppefood.png);
+.qr-code .img{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+.qr-code img{
+    width: 100%;
 }
 
 
@@ -985,3 +995,158 @@ body{
 
 
 
+/* --------------------------------------- 
+responsive */
+
+@media (min-width: 1025px) {
+    .details-restaurant {
+        margin:auto;
+    }
+
+    .container{
+        width: 1200px;
+    }
+}
+
+/* Responsive styles for screens between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .details-restaurant .container{
+        display: flex;
+    }
+    .details-restaurant .details-restaurant-img{
+        margin-left: 10px;
+        width: 50%;
+        margin-right: 30px;
+    }
+
+    .details-restaurant .details-restaurant-info{
+        width: 50%;
+    }
+
+    .container{
+
+    }
+    .now-menu-restaurant{
+        width: 70%;
+    }
+
+    .now-menu-restaurant .menu-restaurant-content-tab .menu-restaurant-category{
+        margin-left: 10px;
+        width: 25%;
+    }
+
+    .menu-restaurant-category .item span{
+        font-size: smaller !important;
+    }
+
+    .now-menu-restaurant .menu-restaurant-content-tab .menu-restaurant-detail{
+        width: 70%;
+    }
+
+    .promotion-orders .promotion-item  .content{
+        font-size: small;
+    }
+
+    .item-restaurant-row{
+        height: 90px;
+    }
+
+    .item-restaurant-row .item-restaurant-info{
+        width: 50%;
+        font-size: 14px;
+    }
+
+    .qr-code{
+        width: 27%;
+        height: 165px;
+        font-size: 12px;
+    }
+    
+
+    .qr-code .img{
+        width: 90px;
+        height: 75px;
+        margin-bottom: 20px;
+    }
+
+
+    .qr-code img{
+        width: 100%;
+    }
+}
+
+
+
+/* Responsive styles for screens smaller than 767px */
+@media (max-width: 767px) {
+    .details-restaurant .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .details-restaurant .details-restaurant-img{
+        width: 90%;
+        margin: auto;
+    }
+
+    .details-restaurant .details-restaurant-info{
+        width: 95%;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .container{
+    }
+
+    .now-menu-restaurant{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    .now-menu-restaurant .menu-restaurant-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .now-menu-restaurant .menu-restaurant-content-tab .menu-restaurant-category{
+        margin-left: 10px;
+        position: relative;
+        margin-bottom: 20px;
+        width: 70%;
+    }
+
+    .now-menu-restaurant .menu-restaurant-content-tab .menu-restaurant-detail{
+        margin-left: 10px;
+        width: 135%;
+    }
+
+    .item-restaurant-row{
+        height: 100px;
+    }
+
+    .item-restaurant-row .item-restaurant-info{
+        width: 50%;
+        font-size: 14px;
+    }
+
+    
+
+    
+
+    .qr-code{
+        width: 45%;
+        height: 165px;
+        font-size: 12px;
+    }
+    
+
+    .qr-code .img{
+        width: 90px;
+        height: 75px;
+        margin-bottom: 20px;
+    }
+
+
+    .qr-code img{
+        width: 100%;
+    }
+}
