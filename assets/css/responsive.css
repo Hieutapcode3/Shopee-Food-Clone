@@ -1,4 +1,159 @@
-@media screen and (max-width:1700px) and (min-width:1200px){
+@media (max-width: 344px) {
+    .main-header{
+        margin-bottom: 100px;
+    }
+    .container-header{
+        position: absolute;
+        height: 200px;
+        top: 0px;
+        padding: 0 10px;
+    }
+    .container-header .header-content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .container-header .header-content .logo {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 40%;
+        margin: 0px;
+    }
+
+    .container-header .header-content .logo img{
+        width: 100%;
+    }
+
+    .container-header .header-content .drop-down{
+        position: absolute;
+        z-index: 1;
+        right: 27%;
+        top: 10px;
+    }
+
+    .container-header .header-content .drop-down .dropdown-menu{
+        z-index: 100;
+    }
+
+    .drop-down .dropdown-menu .place-items{
+    
+    }
+
+    .container-header .header-content .nav {
+        display: flex;
+        width: 60%;
+        padding-left: 0px;
+        position: absolute;
+    }
+
+    .container-header .header-content .search{
+        position: absolute;
+        left: -10px;
+        top: 40px;
+    }
+
+    .container-header .header-content .login{
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: 25%;
+    }
+
+    .container-header .header-content .app-driver {
+        position: static;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 345px) and (max-width: 767px) {
+    .main-header{
+        margin-bottom: 100px;
+    }
+    .container-header{
+        position: absolute;
+        height: 200px;
+        top: 0px;
+        padding: 0 10px;
+    }
+    .container-header .header-content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .container-header .header-content .logo {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 40%;
+        margin: 0px;
+    }
+
+    .container-header .header-content .logo img{
+        width: 100%;
+    }
+
+    .container-header .header-content .drop-down{
+        position: absolute;
+        z-index: 1;
+        right: 27%;
+        top: 10px;
+    }
+
+    .container-header .header-content .drop-down .dropdown-menu{
+        z-index: 100;
+    }
+
+    .drop-down .dropdown-menu .place-items{
+    
+    }
+
+    .container-header .header-content .nav {
+        display: flex;
+        width: 60%;
+        padding-left: 0px;
+        position: absolute;
+    }
+
+    .container-header .header-content .search{
+        position: absolute;
+        right: 0px;
+        top: 75px;
+    }
+
+    .container-header .header-content .login{
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: 25%;
+    }
+
+    .container-header .header-content .app-driver {
+        position: static;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container-header .header-content .logo {
+        position: static;
+        margin: 0 10px;
+    }
+    .container-header .header-content .nav {
+        width: auto;
+        padding-left: 10px;
+        display: flex;
+    }
+
+    .header-content .nav li{
+        border-bottom: none;
+    }
+    .header-content .nav li {
+        padding: 26px 5px 21px;
+    }
+}
+
+@media (min-width: 1025px) {
     .container-header .header-content .logo {
         position: static;
     }
@@ -9,31 +164,93 @@
         position: static;
     }
 }
-@media screen and (max-width:1199px) and (min-width:900px){
-    .container-header .header-content .logo {
-        position: static;
-        margin: 0 10px;
-    }
-    .container-header .header-content .nav {
-        /* display: none; */
-        width: auto;
-        padding-left: 10px;
-    }
-    .header-content .nav li {
-        padding: 26px 5px 21px;
+
+
+
+
+/* ------------------------------- */
+
+@media (min-width: 1025px) {
+    .container-footer {
+        width: 1200px;
     }
 }
-@media screen and (max-width:899px){
-    .container-header .header-content {
-        justify-content: space-evenly;
-    }
-    .container-header .header-content .logo {
-        position: static;
-        margin: 0 10px 0 10px;
-    }
-    .container-header .header-content .nav {
-        display: none;
+
+/* Responsive styles for screens between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container-footer {
+        width: 100%;
+        padding: 20px; 
+        margin: auto; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: small;
     }
 
+    .container-footer .company{
+        width: 20%;
+    }
+       
+    
+    .container-footer .apps-dowload  {
+        margin-left: 40px;
+    }
+    
+    .container-footer .social-media {
+        margin-right: 20px;
+    }
+}
 
+
+
+/* Responsive styles for screens smaller than 767px */
+@media (max-width: 767px) {
+    .container-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Đảm bảo căn giữa các phần tử con theo chiều ngang */
+    }
+    
+
+    .container-footer .company{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .container-footer .apps-dowload {
+        width: 100%; /* Đảm bảo chiều rộng 100% của phần tử .apps-download */
+        justify-content: center; /* Căn giữa các phần tử con theo chiều ngang */
+        align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+        margin-bottom: 30px; /* Khoảng cách phía dưới */
+    }
+    .container-footer .apps-dowload a {
+        display: block; /* Đảm bảo hiển thị là block để có thể căn giữa */
+        margin: auto;
+    }
+
+    .container-footer h4 {
+        font-size: 14px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .container-footer .social-media {
+        width: auto;
+    }
+    .container-footer .social-media img {
+        max-width: 80px;
+    }
+    .container-footer .social-media span p {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+    .container-footer .addr-company {
+        text-align: center;
+    }
+    .container-footer .addr-company a {
+       float: none !important;
+       margin: auto;
+    }
 }
