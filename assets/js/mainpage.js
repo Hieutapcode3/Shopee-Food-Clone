@@ -6,18 +6,16 @@ const containerItemFood = document.querySelector(".container-items-food");
 const initialTop = 70;
 const containerMarginBottom = 68;
 const windowWidth = window.innerWidth;
+let fixedTop;
 function updateFixedTop() {
   const containerItemFoodHeight = containerItemFood.offsetHeight;
-  // if (windowWidth >= 1200) {
-  //   // Kích thước 100%
-  //   fixedTop = containerItemFoodHeight - 700;
-  // } else if (windowWidth >= 900) {
-  //   // Kích thước 75%
-  //   fixedTop = containerItemFoodHeight - 943;
-  // } else {
-  //   // Kích thước nhỏ hơn, bạn có thể tùy chỉnh giá trị khác nếu cần
-  //   }
-  fixedTop = containerItemFoodHeight - 783;
+  if (windowWidth >= 1200) {
+    fixedTop = containerItemFoodHeight - 783;
+  } else if (windowWidth >= 905) {
+    fixedTop = containerItemFoodHeight - 700;
+  } else {
+    fixedTop = 0;
+  }
 
   window.addEventListener("scroll", () => {
     const containerRect = container.getBoundingClientRect();
@@ -123,7 +121,6 @@ loadMoreButtons.forEach((button) => {
     } else {
       createItemFood = createItemFood1;
     }
-
     for (let i = 0; i < 6; i++) {
       const newItemFood = createItemFood();
       itemFoodContainer.appendChild(newItemFood);

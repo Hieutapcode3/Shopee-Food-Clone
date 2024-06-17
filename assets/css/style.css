@@ -19,7 +19,7 @@ body {
     display: block;
 }
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     height: 100%;
 }
@@ -171,7 +171,7 @@ body {
 
 }
 .content .wall-banner .container-content {
-    width: 1200px;
+    max-width: 1200px;
     position: relative;
     height: 100%;
     margin: auto;
@@ -333,6 +333,9 @@ body {
     margin: 3px auto;
     cursor: pointer;
     font-family: inherit;
+}
+.list-items-food .area-items >button:active>i {
+    animation: spin 1s linear infinite;
 }
 .list-items-food .area-items .title-area{
     display: flex;
@@ -529,9 +532,8 @@ body {
     font-size: 13px;
 }
 .content .des-coporation {
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .content .des-coporation .item-des-cor {
     padding: 20px 150px 50px;
@@ -549,6 +551,9 @@ body {
     font-size: 15px;
     margin-bottom: 1rem;
     color: rgba(0, 0, 0, .6);
+}
+.item-des-cor img {
+    width: calc(100% + 16px);
 }
 .des-coporation .item-des-cor.row-2 {
     padding: 53px 350px 53px 150px;
@@ -595,6 +600,7 @@ body {
     right: 66px;
     bottom: -33px;
     transform: scale(.8);
+    width: auto;
 }
 .content .des-coporation .footer-content {
     margin-top: 50px;
@@ -645,7 +651,7 @@ body {
 }
 /* FOOTER */
 .container-footer {
-    width: 1200px;
+    max-width: 1200px;
     padding-top: 32px;
     padding-bottom: 25px;
     margin: auto;
