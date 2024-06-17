@@ -62,7 +62,9 @@
     .wall-banner .container-content .side-search {
         top: 35%;
     }
-
+    .content .wall-banner {
+        width: 100vw;
+    }
 
 }
 @media screen and (max-width: 600px) {

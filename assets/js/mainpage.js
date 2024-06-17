@@ -12,9 +12,9 @@ function updateFixedTop() {
   if (windowWidth >= 1200) {
     fixedTop = containerItemFoodHeight - 783;
   } else if (windowWidth >= 905) {
-    fixedTop = containerItemFoodHeight - 700;
+    fixedTop = containerItemFoodHeight - 180;
   } else {
-    fixedTop = 0;
+    fixedTop = containerItemFoodHeight - 240;
   }
 
   window.addEventListener("scroll", () => {

@@ -25,53 +25,54 @@
                         <p class="select-place">Hà Nội<i class="ti-angle-down"></i></p>
                         <div class="dropdown-menu">
                             <div class="place-items">
-                                <p>Tp.hcm</p>
+                                <p>TP.HCM</p>
                                 <p>92046 địa điểm</p>
                             </div>
                             <div class="place-items">
-                                <p>Tp.hcm</p>
+                                <p>Đà Nẵng</p>
                                 <p>92046 địa điểm</p>
                             </div>
                             <div class="place-items">
-                                <p>Tp.hcm</p>
+                                <p>Cần Thơ</p>
                                 <p>92046 địa điểm</p>
                             </div>
                             <div class="place-items">
-                                <p>Tp.hcm</p>
+                                <p>Hải Phòng</p>
                                 <p>92046 địa điểm</p>
                             </div>
                             <div class="place-items">
-                                <p>Tp.hcm</p>
+                                <p>Huế</p>
                                 <p>92046 địa điểm</p>
                             </div>
                             <div class="place-items">
-                                <p>Tp.hcm</p>
+                                <p>Vũng Tàu</p>
                                 <p>92046 địa điểm</p>
                             </div>
                             <div class="place-items">
-                                <p>Tp.hcm</p>
+                                <p>Cà Mau</p>
                                 <p>92046 địa điểm</p>
                             </div>
                             <div class="place-items">
-                                <p>Tp.hcm</p>
+                                <p>Cao Bằng</p>
                                 <p>92046 địa điểm</p>
                             </div>
                             <div class="place-items">
-                                <p>Tp.hcm</p>
+                                <p>Hải Dương</p>
                                 <p>92046 địa điểm</p>
                             </div>
                         </div>
                     </div>
                     <ul class="nav">
-                        <li class="li"><a href="index.html">Đồ ăn</a></li>
-                        <li class="li"><a href="index.html">Thực phẩm</a></li>
-                        <li class="li"><a href="index.html">Rượu bia</a></li>
-                        <li class="li"><a href="index.html">Hoa</a></li>
-                        <li class="li"><a href="index.html">Siêu thị</a></li>
-                        <li class="li"><a href="index.html">Thú cưng</a></li>
+                        <li class="li"><a href="#" data-category="food">Đồ ăn</a></li>
+                        <li class="li"><a href="#" data-category="grocery">Thực phẩm</a></li>
+                        <li class="li"><a href="#" data-category="alcohol">Rượu bia</a></li>
+                        <li class="li"><a href="#" data-category="flowers">Hoa</a></li>
+                        <li class="li"><a href="#" data-category="supermarket">Siêu thị</a></li>
+                        <li class="li"><a href="#" data-category="medicine">Thuốc</a></li>
+                        <li class="li"><a href="#" data-category="pets">Thú cưng</a></li>
                     </ul>
                     <div class="search">
-                        <a href=""><i class="ti-search"></i></a>
+                        <i class="ti-search js-search"></i>
                     </div>
                     <div class="login">
                         <a href="login.html"><button type="button">Đăng nhập</button></a>
@@ -886,8 +887,161 @@
         </div>
         
     </footer>
-
+    <div class="modal search">
+        <div class="modal-search-container">
+            <div class="modal-content">
+                <i class="ti-close js-modal-search-close"></i>
+                <div class="modal-search-form">
+                    <span>Đặt Đồ ăn, giao hàng từ 20'... có 46162 địa điểm ở Hà Nội từ 00:00 - 23:59</span>
+                    <form action="">
+                        <input type="text" class="js-input-search">
+                    </form>
+                    <div class="loading-spinner"></div>
+                    <div class="search-result">
+                        <div class="main-result">
+                            <div class="product">
+                                <a href="">
+                                    <div class="img-product">
+                                        <img src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsu8ug1bkzo9a0@resize_ss280x175!@crop_w280_h175_cT" alt="">
+                                    </div>
+                                    <div class="infor-product">
+                                        <p class="name-product">A-Phú - Mì Trộn Indomie & Ăn Vặt - Hồng Mai</p>
+                                        <p class="addr-product">7 Ngõ 158 Hồng Mai, P. Bạch Mai, Hai Bà Trưng, Hà Nội</p>
+                                    </div>
+                                    <div class="opentime-status">
+                                        <span>Mở cửa</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="">
+                                    <div class="img-product">
+                                        <img src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsu8ug1bkzo9a0@resize_ss280x175!@crop_w280_h175_cT" alt="">
+                                    </div>
+                                    <div class="infor-product">
+                                        <p class="name-product">A-Phú - Mì Trộn Indomie & Ăn Vặt - Hồng Mai</p>
+                                        <p class="addr-product">7 Ngõ 158 Hồng Mai, P. Bạch Mai, Hai Bà Trưng, Hà Nội</p>
+                                    </div>
+                                    <div class="opentime-status">
+                                        <span>Mở cửa</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="">
+                                    <div class="img-product">
+                                        <img src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsu8ug1bkzo9a0@resize_ss280x175!@crop_w280_h175_cT" alt="">
+                                    </div>
+                                    <div class="infor-product">
+                                        <p class="name-product">A-Phú - Mì Trộn Indomie & Ăn Vặt - Hồng Mai</p>
+                                        <p class="addr-product">7 Ngõ 158 Hồng Mai, P. Bạch Mai, Hai Bà Trưng, Hà Nội</p>
+                                    </div>
+                                    <div class="opentime-status">
+                                        <span>Mở cửa</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="">
+                                    <div class="img-product">
+                                        <img src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsu8ug1bkzo9a0@resize_ss280x175!@crop_w280_h175_cT" alt="">
+                                    </div>
+                                    <div class="infor-product">
+                                        <p class="name-product">A-Phú - Mì Trộn Indomie & Ăn Vặt - Hồng Mai</p>
+                                        <p class="addr-product">7 Ngõ 158 Hồng Mai, P. Bạch Mai, Hai Bà Trưng, Hà Nội</p>
+                                    </div>
+                                    <div class="opentime-status">
+                                        <span>Mở cửa</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="">
+                                    <div class="img-product">
+                                        <img src="https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsu8ug1bkzo9a0@resize_ss280x175!@crop_w280_h175_cT" alt="">
+                                    </div>
+                                    <div class="infor-product">
+                                        <p class="name-product">A-Phú - Mì Trộn Indomie & Ăn Vặt - Hồng Mai</p>
+                                        <p class="addr-product">7 Ngõ 158 Hồng Mai, P. Bạch Mai, Hai Bà Trưng, Hà Nội</p>
+                                    </div>
+                                    <div class="opentime-status">
+                                        <span>Mở cửa</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-search">
+                            <div class="container-footer-search">
+                                <span><i class="ti-search"></i></span>
+                                Tìm thêm kết quả cho
+                                <span class="key-word">a</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="module" src="./assets/js/restaurant-list.js"></script>
     <script src="./assets/js/header.js"></script>
+    <script>
+        const search_products = document.querySelector(".js-search");
+        const modal_search = document.querySelector(".modal.search");
+        const modal_search_container = document.querySelector(
+        ".modal-search-container"
+        );
+        const modal_content = document.querySelector(".modal-content");
+        const close_search = document.querySelector(".js-modal-search-close");
+
+        function hideAreaSearch() {
+        modal_search_container.classList.add("modal-fadeOut");
+        }
+
+        function showAreaSearch() {
+        modal_search.classList.add("open");
+        modal_search_container.classList.remove("modal-fadeOut");
+        }
+
+        search_products.addEventListener("click", showAreaSearch);
+        close_search.addEventListener("click", hideAreaSearch);
+
+        document.addEventListener("click", (event) => {
+        if (
+            !modal_content.contains(event.target) &&
+            !search_products.contains(event.target)
+        ) {
+            hideAreaSearch();
+        }
+        });
+
+        modal_search_container.addEventListener("animationend", () => {
+        if (modal_search_container.classList.contains("modal-fadeOut")) {
+            modal_search.classList.remove("open");
+            modal_search_container.classList.remove("modal-fadeOut");
+        }
+        });
+
+        const inputSearch = document.querySelector(".js-input-search");
+        const searchResult = document.querySelector(".search-result");
+        const keyWord = document.querySelector(".key-word");
+        const loadingSpinner = document.querySelector(".loading-spinner");
+
+        inputSearch.addEventListener("input", () => {
+        const value = inputSearch.value.trim();
+        if (value === "") {
+            searchResult.style.display = "none";
+            loadingSpinner.style.display = "none";
+        } else {
+            searchResult.style.display = "none";
+            loadingSpinner.style.display = "block";
+            keyWord.textContent = value;
+
+            setTimeout(() => {
+            loadingSpinner.style.display = "none";
+            searchResult.style.display = "block";
+            }, 1000);
+        }
+        });
+    </script>
 </body>
 </html>
