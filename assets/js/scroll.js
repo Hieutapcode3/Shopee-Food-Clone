@@ -1,29 +1,26 @@
-document.getElementById('chedau').addEventListener('click', function() {
-    document.getElementById('chedau1').scrollIntoView({
-        behavior: 'smooth'
-    });
+document.getElementById("chedau").addEventListener("click", function () {
+  document.getElementById("chedau1").scrollIntoView({
+    behavior: "smooth",
+  });
 });
 
-document.getElementById('che').addEventListener('click', function() {
-    document.getElementById('che1').scrollIntoView({
-        behavior: 'smooth'
-    });
+document.getElementById("che").addEventListener("click", function () {
+  document.getElementById("che1").scrollIntoView({
+    behavior: "smooth",
+  });
 });
 
-
-document.getElementById('tsav').addEventListener('click', function() {
-    document.getElementById('tsav1').scrollIntoView({
-        behavior: 'smooth'
-    });
+document.getElementById("tsav").addEventListener("click", function () {
+  document.getElementById("tsav1").scrollIntoView({
+    behavior: "smooth",
+  });
 });
 
-
-document.getElementById('combo').addEventListener('click', function() {
-    document.getElementById('combo1').scrollIntoView({
-        behavior: 'smooth'
-    });
+document.getElementById("combo").addEventListener("click", function () {
+  document.getElementById("combo1").scrollIntoView({
+    behavior: "smooth",
+  });
 });
-
 
 // document.getElementById('scroll-spy').addEventListener('hover', function() {
 //     var item = document.querySelectorAll(".item");
@@ -36,26 +33,42 @@ document.getElementById('combo').addEventListener('click', function() {
 //     })
 // });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const qrCode = document.getElementById("QRCode");
+  const btnAddings = document.querySelectorAll(".btn-adding");
 
+  btnAddings.forEach((btnAdding) => {
+    btnAdding.addEventListener("click", function (event) {
+      const qrCodePosition =
+        qrCode.getBoundingClientRect().top + window.scrollY - 100;
 
-document.addEventListener("DOMContentLoaded", function() {
-    const qrCode = document.getElementById("QRCode");
-    const btnAddings = document.querySelectorAll(".btn-adding");
+      window.scrollTo({
+        top: qrCodePosition,
+        behavior: "smooth",
+      });
 
-    btnAddings.forEach(btnAdding => {
-        btnAdding.addEventListener("click", function(event) {
-            const qrCodePosition = qrCode.getBoundingClientRect().top + window.scrollY - 100;
+      qrCode.classList.add("animate__animated", "animate__tada");
 
-            window.scrollTo({
-                top: qrCodePosition,
-                behavior: 'smooth'
-            });
-
-            qrCode.classList.add("animate__animated", "animate__tada");
-
-            qrCode.addEventListener('animationend', () => {
-                qrCode.classList.remove("animate__animated", "animate__tada");
-            }, { once: true }); 
-        });
+      qrCode.addEventListener(
+        "animationend",
+        () => {
+          qrCode.classList.remove("animate__animated", "animate__tada");
+        },
+        { once: true }
+      );
     });
+  });
+});
+
+// top-control
+document.getElementById("back-top-page").addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+window.addEventListener("scroll", function () {
+  const topControl = document.querySelector(".top-control");
+  if (window.scrollY > 200) {
+    topControl.classList.add("active");
+  } else if (window.scrollY < window.innerHeight - 200) {
+    topControl.classList.remove("active");
+  }
 });

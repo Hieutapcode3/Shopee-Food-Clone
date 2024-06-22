@@ -533,7 +533,6 @@
             
         </div>
     </div>
-    
     <footer class="footer">
         <div class="container-footer">
             <div class="company">
@@ -672,7 +671,7 @@
                         </div>
                         <div class="footer-search">
                             <div class="container-footer-search">
-                                <span><i class="ti-search js-search"></i></span>
+                                <span><i class="ti-search"></i></span>
                                 Tìm thêm kết quả cho
                                 <span class="key-word">a</span>
                             </div>
@@ -680,6 +679,27 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="top-control">
+        <div class="container-control">
+            <div class="control-link" id="back-top-page">
+                <i class="fas fa-angle-up"></i>
+                <label>Quay lại đầu trang</label>
+            </div>
+            <a target="_blank" class="control-link" href="tuyendung.html">
+                <i class="ti-car"></i>
+                <label>Đăng ký trở thành tài xế của ShopeeFood.vn ngay!</label>
+            </a>
+            <a target="_blank" class="control-link" href="https://itunes.apple.com/us/app/deliverynow/id1137866760">
+                <i class="fab fa-apple"></i>
+                <label>Tải ứng dụng iOs</label>
+            </a>
+            <a target="_blank" class="control-link" href="https://play.google.com/store/apps/details?id=com.deliverynow">
+                <i class="ti-android"></i>
+                <label>Tải ứng dụng android</label>
+            </a>
+
         </div>
     </div>
     <script>
@@ -690,19 +710,19 @@
         );
         const modal_content = document.querySelector(".modal-content");
         const close_search = document.querySelector(".js-modal-search-close");
-    
+
         function hideAreaSearch() {
         modal_search_container.classList.add("modal-fadeOut");
         }
-    
+
         function showAreaSearch() {
         modal_search.classList.add("open");
         modal_search_container.classList.remove("modal-fadeOut");
         }
-    
+
         search_products.addEventListener("click", showAreaSearch);
         close_search.addEventListener("click", hideAreaSearch);
-    
+
         document.addEventListener("click", (event) => {
         if (
             !modal_content.contains(event.target) &&
@@ -711,19 +731,19 @@
             hideAreaSearch();
         }
         });
-    
+
         modal_search_container.addEventListener("animationend", () => {
         if (modal_search_container.classList.contains("modal-fadeOut")) {
             modal_search.classList.remove("open");
             modal_search_container.classList.remove("modal-fadeOut");
         }
         });
-    
+
         const inputSearch = document.querySelector(".js-input-search");
         const searchResult = document.querySelector(".search-result");
         const keyWord = document.querySelector(".key-word");
         const loadingSpinner = document.querySelector(".loading-spinner");
-    
+
         inputSearch.addEventListener("input", () => {
         const value = inputSearch.value.trim();
         if (value === "") {
@@ -733,7 +753,7 @@
             searchResult.style.display = "none";
             loadingSpinner.style.display = "block";
             keyWord.textContent = value;
-    
+
             setTimeout(() => {
             loadingSpinner.style.display = "none";
             searchResult.style.display = "block";

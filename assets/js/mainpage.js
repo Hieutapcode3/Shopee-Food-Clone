@@ -234,3 +234,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize with the default category
   updateCategoryList("food");
 });
+// Back to top page
+document.getElementById("back-top-page").addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+window.addEventListener("scroll", function () {
+  const topControl = document.querySelector(".top-control");
+  if (window.scrollY > 200) {
+    topControl.classList.add("active");
+  } else if (window.scrollY < window.innerHeight - 200) {
+    topControl.classList.remove("active");
+  }
+});

@@ -9,6 +9,10 @@ html {
     width: 1200px;
     margin: auto;
 }
+a {
+    text-decoration: none;
+    color: #000;
+}
 
 /* HEADER */
 .page {
@@ -485,21 +489,6 @@ html {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FOOTER */
 .container-footer {
     width: 1200px;
@@ -591,4 +580,49 @@ html {
 }
 .container-footer .addr-company img {
     width: 100%;
+}
+.top-control {
+    position: fixed;
+    right: 0;
+    bottom: -1px;
+    width: 40px;
+    background: #c2c2c2;
+    font-size: 12px;
+    z-index: 999;
+    transition: transform .4s;
+    transform: translateY(100%);
+}
+.top-control.active {
+    transform: translate(0);
+}
+.top-control .container-control {
+    display: flex;
+    flex-direction: column;
+}
+.top-control .container-control .control-link {
+    padding: 5px 0;
+    text-align: center;
+    border-bottom: 1px solid #00000026;
+    cursor: pointer;
+    position: relative;
+}
+.container-control .control-link:hover label {
+    display: block;
+}
+.container-control .control-link label {
+    color: #464646;
+    position: absolute;
+    background: #ebebeb;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    padding: 10px;
+    margin-bottom: 0;
+    display: none;
+    white-space: nowrap;
+}
+.top-control .container-control i {
+    font-size: 20px;
+    color: #464646;
+    line-height: 25px;
 }

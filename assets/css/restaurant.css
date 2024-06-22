@@ -28,6 +28,10 @@ body{
 .clear {
     clear: both;
 }
+a {
+    text-decoration: none;
+    color: #000;
+}
 
 /* ------------------------------------------------- */
 
@@ -1043,6 +1047,95 @@ responsive */
     }
 }
 /* modal search */
+/* modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    display: none;
+}
+.modal.open {
+    display: block;
+}
+.modal-container {
+    width: 883px;
+    background-color: #fff;
+    margin: 5% auto 0;
+    border-radius: 6px 6px;
+    position: relative;
+    animation: modalFadeIn linear 0.3s;
+}
+.modal-container >i {
+    position:absolute;
+    top: -24px;
+    right: 0;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+.modal-container.modal-fadeOut {
+    animation: modalFadeOut ease-out 0.3s;
+}
+.modal-header {
+    padding: 11px 15px 10px 18px;
+    background-color: #ebebeb;
+    border-radius: 6px 6px 0 0;
+}
+.modal-header h3 {
+    font-size: 16px;
+    color: #464646;
+}
+.modal-body .search-local {
+    padding: 16px 20px 0;
+}
+.primary-place {
+    position: relative;
+}
+.primary-place i {
+    position: absolute;
+    font-size: 20px;
+    padding: 10px;
+    opacity: 0.6;
+}
+.primary-place i:last-of-type {
+    right: 0;
+    cursor: pointer;
+}
+.primary-place input {
+    width: 100%;
+    padding: 10px 40px 10px 40px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    line-height: 18px;
+    outline: none;
+    font-size: 18px;
+}
+.find-map {
+    padding: 18px 31px 18px 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.find-map i {
+    padding: 4px;
+    opacity: 0.6;
+}
+.find-map i:last-child {
+    font-size: 10px;
+}
+.find-map p {
+    padding-left: 12px;
+    color: #0288d1;
+    flex-grow: 1;
+    flex-basis: 0;
+}
 @keyframes modalFadeIn {
     from{
         opacity: 0;
@@ -1238,4 +1331,49 @@ responsive */
     color: #cf2127;
     font-weight: 700;
     font-size: 14px;
+}
+.top-control {
+    position: fixed;
+    right: 0;
+    bottom: -1px;
+    width: 40px;
+    background: #c2c2c2;
+    font-size: 12px;
+    z-index: 999;
+    transition: transform .4s;
+    transform: translateY(100%);
+}
+.top-control.active {
+    transform: translate(0);
+}
+.top-control .container-control {
+    display: flex;
+    flex-direction: column;
+}
+.top-control .container-control .control-link {
+    padding: 5px 0;
+    text-align: center;
+    border-bottom: 1px solid #00000026;
+    cursor: pointer;
+    position: relative;
+}
+.container-control .control-link:hover label {
+    display: block;
+}
+.container-control .control-link label {
+    color: #464646;
+    position: absolute;
+    background: #ebebeb;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    padding: 10px;
+    margin-bottom: 0;
+    display: none;
+    white-space: nowrap;
+}
+.top-control .container-control i {
+    font-size: 20px;
+    color: #464646;
+    line-height: 25px;
 }
