@@ -36,6 +36,10 @@
     .wall-banner .container-content .side-search {
         top: 40%;
     }
+    .modal-container {
+        margin: 10% auto;
+        transition: all 0.2s linear;
+    }
 }
 @media screen and (max-width:904px){
     .container-header .header-content {
@@ -64,6 +68,10 @@
     }
     .content .wall-banner {
         width: 100vw;
+    }
+    .modal-container {
+        margin: 15% auto;
+        transition: all 0.2s linear;
     }
 
 }
@@ -158,5 +166,9 @@
     }
     .container-footer .addr-company {
         text-align: center;
+    }
+    .modal-container {
+        margin: 20% auto;
+        transition: all 0.2s linear;
     }
 }

@@ -1,7 +1,8 @@
 * {
     margin: 0;
-}
+    scroll-behavior: smooth;
 
+}
 body{
     background-color: #f2f2f2;
     margin: 0px;

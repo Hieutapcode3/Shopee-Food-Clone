@@ -2,13 +2,13 @@
 const wallBanner = document.querySelector(".wall-banner");
 const container = document.querySelector(".container-scroll-home");
 const containerItemFood = document.querySelector(".container-items-food");
-
 const initialTop = 70;
 const containerMarginBottom = 68;
-const windowWidth = window.innerWidth;
 let fixedTop;
 function updateFixedTop() {
+  const windowWidth = window.innerWidth;
   const containerItemFoodHeight = containerItemFood.offsetHeight;
+
   if (windowWidth >= 1200) {
     fixedTop = containerItemFoodHeight - 783;
   } else if (windowWidth >= 905) {
@@ -16,21 +16,23 @@ function updateFixedTop() {
   } else {
     fixedTop = containerItemFoodHeight - 240;
   }
-
-  window.addEventListener("scroll", () => {
-    const containerRect = container.getBoundingClientRect();
-    const containerBottom = containerRect.bottom - containerMarginBottom;
-    const windowHeight = window.innerHeight;
-
-    if (containerBottom <= windowHeight) {
-      wallBanner.style.position = "absolute";
-      wallBanner.style.top = fixedTop + "px";
-    } else if (containerRect.bottom - containerMarginBottom > windowHeight) {
-      wallBanner.style.position = "fixed";
-      wallBanner.style.top = initialTop + "px";
-    }
-  });
+  handleScroll();
 }
+function handleScroll() {
+  const containerRect = container.getBoundingClientRect();
+  const containerBottom = containerRect.bottom - containerMarginBottom;
+  const windowHeight = window.innerHeight;
+  if (containerBottom <= windowHeight) {
+    wallBanner.style.position = "absolute";
+    wallBanner.style.top = fixedTop + "px";
+  } else if (containerRect.bottom - containerMarginBottom > windowHeight) {
+    wallBanner.style.position = "fixed";
+    wallBanner.style.top = initialTop + "px";
+  }
+}
+window.addEventListener("scroll", handleScroll);
+window.addEventListener("resize", updateFixedTop);
+
 updateFixedTop();
 
 // LOAD MORE LIST ITEM

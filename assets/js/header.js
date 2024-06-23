@@ -5,7 +5,7 @@ for (const item of subnav) {
     setTimeout(() => {
       subnav.forEach((el) => el.classList.remove("active"));
       item.classList.add("active");
-    }, 400);
+    }, 200);
   });
 }
 

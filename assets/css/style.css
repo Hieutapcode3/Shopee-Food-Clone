@@ -762,12 +762,13 @@ a {
     display: block;
 }
 .modal-container {
-    width: 883px;
+    max-width: 883px;
     background-color: #fff;
     margin: 5% auto 0;
     border-radius: 6px 6px;
     position: relative;
     animation: modalFadeIn linear 0.3s;
+    transition: all 0.2s linear;
 }
 .modal-container >i {
     position:absolute;
