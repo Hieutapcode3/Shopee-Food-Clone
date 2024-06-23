@@ -1,7 +1,6 @@
 // CHECK ROBOT
 document.addEventListener("DOMContentLoaded", function () {
   const checkboxes = document.querySelectorAll(".type-checkbox");
-
   checkboxes.forEach((checkbox) => {
     checkbox.addEventListener("change", function () {
       if (this.checked) {
@@ -12,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-// SHOW QUESTION
+
 $(document).ready(function () {
   $(".card-header").click(function () {
     $(".card-header")
@@ -24,20 +23,19 @@ $(document).ready(function () {
   });
 });
 
-// scroll-smooth
 $(document).ready(function () {
   $(".nav a").click(function (event) {
-    event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
-    var targetId = $(this).attr("href"); // Lấy giá trị của thuộc tính href
-    var targetPosition = $(targetId).offset().top; // Lấy vị trí của phần tử có id tương ứng
+    event.preventDefault();
+    var targetId = $(this).attr("href");
+    var targetPosition = $(targetId).offset().top;
 
-    $("html, body").animate({ scrollTop: targetPosition }, 900, "linear"); // Trượt xuống phần tử trong 1000 milliseconds
+    $("html, body").animate({ scrollTop: targetPosition }, 900, "linear");
   });
 
   $(".app-driver").click(function () {
-    var targetPosition = $(".banner-dow-app").offset().top; // Lấy vị trí của phần tử có id "app"
+    var targetPosition = $(".banner-dow-app").offset().top;
 
-    $("html, body").animate({ scrollTop: targetPosition }, 900, "linear"); // Trượt xuống phần tử với tốc độ linear
+    $("html, body").animate({ scrollTop: targetPosition }, 900, "linear");
   });
 });
 document.getElementById("back-top-page").addEventListener("click", function () {

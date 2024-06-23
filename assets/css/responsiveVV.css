@@ -1,6 +1,6 @@
 @media (max-width: 344px) {
     .main-header{
-        margin-bottom: 100px;
+        margin-bottom: 120px;
     }
     .container-header{
         position: absolute;
@@ -42,15 +42,22 @@
 
     .container-header .header-content .nav {
         display: flex;
-        width: 60%;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 40%;
         padding-left: 0px;
         position: absolute;
+        
+        
+    }
+    .container-header .header-content .nav li{
+        border-bottom: none;
     }
 
     .container-header .header-content .search{
         position: absolute;
-        left: -10px;
-        top: 40px;
+        right: 20px;
+        bottom: 20px;
     }
 
     .container-header .header-content .login{
@@ -68,7 +75,7 @@
 
 @media (min-width: 345px) and (max-width: 767px) {
     .main-header{
-        margin-bottom: 100px;
+        margin-bottom: 120px;
     }
     .container-header{
         position: absolute;
@@ -110,15 +117,21 @@
 
     .container-header .header-content .nav {
         display: flex;
-        width: 60%;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 40%;
         padding-left: 0px;
         position: absolute;
+
+    }
+    .container-header .header-content .nav li{
+        border-bottom: none;
     }
 
     .container-header .header-content .search{
         position: absolute;
-        right: 0px;
-        top: 75px;
+        right: 20px;
+        bottom: 20px;
     }
 
     .container-header .header-content .login{
@@ -171,9 +184,7 @@
 /* ------------------------------- */
 
 @media (min-width: 1025px) {
-    .container-footer {
-        width: 1200px;
-    }
+    
 }
 
 /* Responsive styles for screens between 768px and 1024px */

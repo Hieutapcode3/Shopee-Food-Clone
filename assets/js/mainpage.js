@@ -199,16 +199,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const categoryList = document.getElementById("category-list");
   let isUpdating = false;
-
   const updateCategoryList = (category) => {
-    if (isUpdating) return; // Nếu đang cập nhật, không thực hiện thêm
+    if (isUpdating) return;
     isUpdating = true;
-
-    // Clear current list
     categoryList.innerHTML = "";
-
     setTimeout(() => {
-      // Giả lập thời gian trễ khi tải dữ liệu
       categories[category].forEach((item) => {
         const li = document.createElement("li");
         const a = document.createElement("a");
@@ -217,8 +212,8 @@ document.addEventListener("DOMContentLoaded", () => {
         li.appendChild(a);
         categoryList.appendChild(li);
       });
-      isUpdating = false; // Kết thúc quá trình cập nhật
-    }, 200); // Thời gian trễ giả lập
+      isUpdating = false;
+    }, 200);
   };
 
   document.querySelectorAll(".nav a").forEach((navItem) => {
@@ -230,8 +225,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-
-  // Initialize with the default category
   updateCategoryList("food");
 });
 // Back to top page

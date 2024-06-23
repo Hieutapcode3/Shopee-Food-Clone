@@ -277,8 +277,6 @@ a {
     text-align: center;
     font-size: 45px;
 }
-.register-process .container-process {
-}
 .register-process .container-process img {
     width: 214px;
     margin: 0 0 36px 50px;
@@ -581,6 +579,8 @@ a {
 .container-footer .addr-company img {
     width: 100%;
 }
+
+/* MODAL CONTROL */
 .top-control {
     position: fixed;
     right: 0;

@@ -79,7 +79,7 @@ a {
 }
 .drop-down .dropdown-menu {
     position: absolute;
-    min-width: 210px;
+    min-width: 215px;
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 3px;
     top: 100%;
@@ -100,9 +100,9 @@ a {
 }
 .dropdown-menu .place-items p:first-child {
     padding: 0 10px;
-    text-transform: uppercase;
     float: left;
     min-width: 70px;
+    flex-grow: 1;
 }
 .dropdown-menu .place-items p:last-child {
     padding: 0 10px;
@@ -113,6 +113,7 @@ a {
 .container-header .header-content .nav {
     padding-left: 42px;
     width: 877px;
+    flex-grow: 1;
 }
 .header-content .nav li {
     display: inline-block;
@@ -192,6 +193,7 @@ a {
 .details-restaurant .details-restaurant-img img{
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .details-restaurant .details-restaurant-info{
@@ -801,7 +803,7 @@ a {
 /* ---------------------------------------------- */
 
 .container-footer {
-    width: 1200px;
+    max-width: 1200px;
     padding-top: 32px;
     padding-bottom: 25px;
     margin: auto;
@@ -898,14 +900,10 @@ responsive */
     .details-restaurant {
         margin:auto;
     }
-
-    .container{
-        width: 1200px;
-    }
 }
 
 /* Responsive styles for screens between 768px and 1024px */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1220px) {
     .details-restaurant .container{
         display: flex;
     }
@@ -988,11 +986,10 @@ responsive */
         width: 95%;
         margin-top: 10px;
         margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
-    .container{
-    }
-
     .now-menu-restaurant{
         width: 70%;
         display: flex;

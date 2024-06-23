@@ -79,7 +79,7 @@ a {
 }
 .drop-down .dropdown-menu {
     position: absolute;
-    min-width: 210px;
+    min-width: 215px;
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 3px;
     top: 100%;
@@ -100,9 +100,9 @@ a {
 }
 .dropdown-menu .place-items p:first-child {
     padding: 0 10px;
-    text-transform: uppercase;
     float: left;
     min-width: 70px;
+    flex-grow: 1;
 }
 .dropdown-menu .place-items p:last-child {
     padding: 0 10px;
@@ -112,7 +112,8 @@ a {
 }
 .container-header .header-content .nav {
     padding-left: 42px;
-    width: 877px;
+    width: 877px;   
+    flex-grow: 1;
 }
 .header-content .nav li {
     display: inline-block;
@@ -169,12 +170,11 @@ a {
 
 
 .wrapper .container{
-    width: 1200px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
 }
-
 
 .container .search{
     padding-top: 15px;
@@ -230,7 +230,6 @@ a {
     font-weight: 700;
     border-radius: 4px 4px 0 0;
 }
-
 
 .item-filter .content-box{
     position: absolute;
@@ -292,16 +291,18 @@ a {
     transition: 0.2s;
 }
 
-.content .custom-checkbox input:checked + label::before {
-    background-color: #fff;
+.content .custom-checkbox input:checked + label::after {
+    background-color: transparent;
     content: "✔";
     color: red;
     font-size: 16px;
     text-align: center;
     line-height: 18px;
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 8px;
 }
-
-
 
 .top .right{
    float: right !important;
@@ -331,8 +332,7 @@ a {
     outline: none;
 }
 
-
-.right .large{
+.right .sort:focus{
     font-size: 16px;
 }
 
@@ -383,19 +383,12 @@ a {
     cursor: pointer;
 }
 
-
-
-
-
-
 /* ------------------------------------------- */
 
 .now-list-restaurant{
     border-radius: 6px;
     margin-bottom: 20px;
-    position: relative;
-
-    
+    position: relative;  
 }
 
 .now-list-restaurant .list-restaurant{
@@ -461,12 +454,6 @@ a {
 .list-restaurant .item-restaurant img{
     width: 100%;
     height: 100%;
-    /* position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    vertical-align: middle;
-    border-style: none; */
 }
 
 .list-restaurant .info-restaurant{
@@ -591,11 +578,6 @@ a {
     
 }
 
-/* .pagination .tag {
-    
-    /* background-image: url('/assets/img/paging-pre.png');  
-} */
-
 .pagination a {
     margin-right: 5px;
     text-decoration: none;
@@ -626,13 +608,6 @@ a {
     color: #252525;
     pointer-events: none;
 }
-/* .icon-paging-pre{
-    width: 18px;
-    height: 18px;
-    
-} */
-
-
 
 .container .more-info{
     margin: 50px 0;
@@ -666,24 +641,15 @@ a {
     content: "";
 }
 
-
-
 ::after,::before{
     box-sizing: border-box;
    
 }
 
-
-
-
-
-
-
-
 /* ---------------------------------------------- */
 
 .container-footer {
-    width: 1200px;
+    max-width: 1200px;
     padding-top: 32px;
     padding-bottom: 25px;
     margin: auto;
@@ -884,62 +850,34 @@ a {
     }
 }
 
-/* @media  (min-width: 320px) and (max-width: 500px) {
-
-    .
-    .wrapper .container {
-        width: 100%;
-        padding: 0 15px;
-    }
-    
-    .list-restaurant .item-restaurant {
-        width: 50%;
-        margin-bottom: 20px;
-    }
-
-    .list-restaurant img {
-        object-fit: cover;
-    }
-
-} */
-
-
-
 /* Kiểu dáng cho di động */
 @media  (max-width: 767px) {
     .wrapper .container {
         width: 100%;
         padding: 0 15px;
     }
-    
     .list-restaurant .item-restaurant {
         width: 50%;
         float: left;
         margin-bottom: 20px;
     }
-
-    .container .search {
-
+    .list-restaurant img {
+        object-fit: contain;
     }
-
     .container .search .item-filter .content-box{
         width: 100%;
     }
-
     .content-box .custom-checkbox{
         width: 50%;
     }
-
     .container  .pagination{
         display: inline-block;
         padding: 0;
         margin-top: 10px;
     }
-
     .pagination li{
         margin-top: 10px;
     }
-
 }
 
 /* Kiểu dáng cho máy tính bảng */
@@ -961,14 +899,7 @@ a {
     }
 }
 
-@media (min-width: 1025px) {
-
-    
-    .wrapper .container {
-        width: 1200px;
-        margin: auto;
-    }
-    
+@media (min-width: 1025px) {    
     .list-restaurant .item-restaurant {
         width: 20%;
         float: left;
